@@ -9,6 +9,10 @@
     <!-- Site Properties -->
 
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css'>
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
@@ -21,10 +25,10 @@
     </script>
 </head>
 
-<body class="ui dimmable">
-    <a href="<?php echo base_url("");?>"><img class="ui small centered image" src="assets/image/HELPPET-DARK.png"
-            style="margin-top:25px"></a>
+<body class="ui dimmable">    
     <div class="ui container" style="position:absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%)">
+        <a href="<?php echo base_url("");?>"><img class="ui small centered image" src="assets/image/HELPPET-DARK.png"
+                style="margin-bottom:10px"></a>
         <div class="ui container center aligned">
             <div class="ui two column grid">
                 <div class="row">

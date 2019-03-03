@@ -7,7 +7,8 @@
     <title>HelpPet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <!-- Site Properties -->
-
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css'>
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -91,7 +92,8 @@
                                 style="margin-top:15px;margin-bottom:20px;background-color:#cd8b62">
                                 Login
                             </div>
-                            <div style="font-size:15px">Belum punya akun HelpPet?<a href="<?php echo base_url("daftar");?>" style="color:brown">
+                            <div style="font-size:15px">Belum punya akun HelpPet?<a
+                                    href="<?php echo base_url("daftar");?>" style="color:brown">
                                     Daftar</a></div>
                         </div>
                         <div class="ui error message">
