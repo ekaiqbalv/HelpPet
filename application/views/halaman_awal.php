@@ -55,8 +55,6 @@ $this->load->view('navigasi');
     </div>
 </div>
 
-
-
 <div class="ui container">
     <div class="ui center aligned container" style="margin-top:30px;font-size:36px">
         <p>Mulai membantu mereka?</p>
@@ -69,7 +67,10 @@ $this->load->view('navigasi');
         <div class="ui button">Search</div>
     </div>
 </div>
+
 <div class="ui container" style="margin-top:30px;margin-bottom:30px">
+
+    <!-- Daftar hewan -->
     <div class="ui five doubling link cards">
         <div class="card">
             <div class="image">
@@ -284,6 +285,7 @@ $this->load->view('navigasi');
         </div>
     </div>
 </div>
+
 <div class="ui center aligned container" style="margin-bottom:30px">
     <div class="ui vertical animated large button" tabindex="0"
         style="width:150px;background-color:#01a8de;color:white">
@@ -293,6 +295,7 @@ $this->load->view('navigasi');
         </div>
     </div>
 </div>
+
 <div class="ui container fluid" style="background-color:#00aeef;color:white">
     <div class="ui center aligned container">
         <div style="padding-top:20px;font-size:32px">
@@ -332,6 +335,7 @@ $this->load->view('navigasi');
         </div>
     </div>
 </div>
+
 <?php
 // Load footer
 $this->load->view('footer');

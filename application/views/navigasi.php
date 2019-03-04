@@ -125,26 +125,28 @@
     </script>
 </head>
 
-<body class="pushable">
-    <div class="pusher">
-        <div class="ui inverted vertical center aligned segment" style="background-color:#cd8b62">
-            <div class="ui container">
-                <div class="ui large secondary inverted menu">
-                    <div class="item" style="margin-right:10px">
-                        <a class="ui tiny image" href="<?php echo base_url("");?>">
-                            <img src="assets/image/HELPPET-LIGHT.png">
-                        </a>
-                    </div>
-                    <a class="item" href="<?php echo base_url("");?>">Beranda</a>
-                    <a class="item">Adopsi Hewan</a>
-                    <a class="item" href="<?php echo base_url("penampunganhewan");?>">Penampungan Hewan</a>
-                    <a class="item">Relawan</a>
-                    <a class="item">Donasi</a>
-                    <div class="right item">
-                        <a class="ui inverted button" style="margin-right:15px"
-                            href="<?php echo base_url("masuk");?>">Masuk</a>
-                        <a class="ui inverted button" href="<?php echo base_url("daftar");?>">Daftar</a>
-                    </div>
+<body>
+    <div class="ui inverted vertical center aligned segment" style="background-color:#cd8b62">
+        <div class="ui container">
+            <div class="ui large secondary inverted menu">
+                <div class="item" style="margin-right:10px">
+                    <a class="ui tiny image" href="<?php echo base_url("");?>">
+                        <img src="assets/image/HELPPET-LIGHT.png">
+                    </a>
+                </div>
+                <a class="item" href="<?php echo base_url("");?>">Beranda</a>
+                <a class="item">Adopsi Hewan</a>
+                <a class="item" href="<?php echo base_url("penampunganhewan");?>">Penampungan Hewan</a>
+                <a class="item">Relawan</a>
+                <a class="item">Donasi</a>
+                <div class="right item">
+                    <a class="ui inverted button" style="margin-right:15px" href="<?php echo base_url("masuk");?>">
+                        Masuk
+                    </a>
+                    <a class="ui inverted button" href="<?php echo base_url("daftar");?>">
+                        Daftar
+                    </a>
                 </div>
             </div>
         </div>
+    </div>

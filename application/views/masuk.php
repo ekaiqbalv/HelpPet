@@ -96,6 +96,8 @@
                                     href="<?php echo base_url("daftar");?>" style="color:brown">
                                     Daftar</a></div>
                         </div>
+
+                        <!-- Pesan error -->
                         <div class="ui error message">
                             <ul class="list">
                                 <li>Alamat email tidak boleh kosong</li>

@@ -33,7 +33,9 @@ $this->load->view('navigasi');
         </div>
     </div>
 </div>
+
 <div style="backgound-color:#e6e5e5;height:2px"></div>
+
 <div class="ui container">
     <div class="ui grid">
         <div class="left floated twelve wide column">
@@ -42,6 +44,8 @@ $this->load->view('navigasi');
                 <a class="item" data-tab="penampunganhewan-informasi">Informasi</a>
                 <a class="item" data-tab="penampunganhewan-donasi">Laporan Donasi</a>
             </div>
+
+            <!-- Daftar hewan -->
             <div class="ui tab active" data-tab="penampunganhewan-hewan">
                 <div class="ui right aligned category search" style="margin-bottom:15px">
                     <div class="ui icon input">
@@ -155,6 +159,8 @@ $this->load->view('navigasi');
                     </div>
                 </div>
             </div>
+
+            <!-- Informasi penampungan hewan -->
             <div class="ui tab" data-tab="penampunganhewan-informasi"
                 style="border:2px solid grey;padding:40px;border-radius:5px">
                 <h2>Informasi Penampungan Hewan</h2><br>
@@ -169,6 +175,8 @@ $this->load->view('navigasi');
                     Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                 </div>
             </div>
+
+            <!-- Laporan donasi -->
             <div class="ui tab" data-tab="penampunganhewan-donasi">
                 <h2>Laporan Penggunaan Dana Donasi</h2><br>
                 <a href="">Februari 2019</a><br><br>
@@ -176,6 +184,7 @@ $this->load->view('navigasi');
                 <a href="">Desember 2018</a><br><br>
             </div>
         </div>
+        
         <div class="right floated four wide column">
             <div style="margin-left:30px;margin-top:30px">
                 <div class="ui animated fade large button brown container" tabindex="0"
@@ -185,6 +194,8 @@ $this->load->view('navigasi');
                         Donasi Sekarang
                     </div>
                 </div>
+
+                <!-- Daftar donatur -->
                 <div style="font-size:24px;font-weight:bold;margin-top:20px;margin-bottom:20px">Daftar Donatur</div>
                 <div class="ui one doubling cards">
                     <div class="card">

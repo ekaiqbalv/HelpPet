@@ -25,7 +25,7 @@
     </script>
 </head>
 
-<body class="ui dimmable">    
+<body class="ui dimmable">
     <div class="ui container" style="position:absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%)">
         <a href="<?php echo base_url("");?>"><img class="ui small centered image" src="assets/image/HELPPET-DARK.png"
                 style="margin-bottom:10px"></a>
@@ -57,6 +57,7 @@
                                     <a class="active item" data-tab="pengguna">Pengguna</a>
                                     <a class="item" data-tab="penampunganhewan">Penampungan Hewan</a>
                                 </div>
+
                                 <!-- Form untuk pendaftaran user -->
                                 <div class="ui tab active" data-tab="pengguna">
                                     <form class="ui form" style="padding:5px 40px 40px 40px">
@@ -104,6 +105,7 @@
                                         </div>
                                     </form>
                                 </div>
+
                                 <!-- Form untuk pendaftaran penampungan hewan -->
                                 <div class="ui tab" data-tab="penampunganhewan">
                                     <form class="ui form" style="padding:5px 40px 40px 40px">
@@ -148,9 +150,10 @@
                                                 onclick="$('.ui.dimmable .dimmer').dimmer('show')">
                                                 Daftar
                                             </div>
-                                            <div style="font-size:15px">Sudah punya akun HelpPet?<a
-                                                    href="<?php echo base_url("masuk");?>" style="color:brown">
-                                                    Masuk</a>
+                                            <div style="font-size:15px">Sudah punya akun HelpPet?
+                                                <a href="<?php echo base_url("masuk");?>" style="color:brown">
+                                                    Masuk
+                                                </a>
                                             </div>
                                         </div>
                                     </form>
@@ -162,6 +165,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Tampilan dimmer saat klik daftar -->
     <div class="ui dimmer">
         <div class="content">
             <h2 class="ui inverted icon header">
