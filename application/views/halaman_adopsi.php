@@ -5,7 +5,7 @@ $this->load->view('navigasi');
 
 <div class="ui container" style="margin-top:30px">
     <div style="font-size:24px">Halo #ParaPecintaHewan,</div>
-    <div style="font-size:20px;margin-top:10px">Silahkan cari atau pilih hewan yang ingin kalian adopsi</div>
+    <div style="font-size:20px;margin-top:10px">Silahkan cari atau pilih hewan yang ingin anda adopsi</div>
     <div class="ui grid" style="margin-top:10px">
         <div class="twelve wide column">
             <div class="ui action left icon input fluid" style="font-size:16px">
