@@ -143,11 +143,14 @@
                 <a class="item">Relawan</a>
                 <a class="item">Donasi</a>
                 <div class="right item">
-                    <a class="ui inverted button" style="margin-right:15px" href="<?php echo base_url("masuk");?>">
-                        Masuk
-                    </a>
-                    <a class="ui inverted button" href="<?php echo base_url("daftar");?>">
-                        Daftar
+                    <a class="ui dropdown item" style="border:2px solid #f3e5dd">
+                        <i class="user circle icon"></i>
+                        <div style="color:white;font-size:16px">Akun</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item">Info Akun</div>
+                            <div class="item">Keluar</div>
+                        </div>
                     </a>
                 </div>
             </div>

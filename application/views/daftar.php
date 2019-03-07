@@ -7,7 +7,7 @@
     <title>HelpPet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <!-- Site Properties -->
-
+    <link rel="icon" href="assets/image/favicon.ico" type="image/gif">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 
     <link rel='stylesheet prefetch'
