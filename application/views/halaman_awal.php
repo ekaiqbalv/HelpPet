@@ -5,12 +5,12 @@ $this->load->view('navigasi');
 
 <div class="ui container fluid" style="background-color:#cd8b62">
     <div class="ui container center aligned">
-        <div class="ui three row grid">
+        <div class="ui three row stackable grid">
             <div class="column">
                 <div class="row">
                     <h1 style="font-size:36px;color:white">Bantuan Anda Membuat Mereka Hidup Bahagia</h1>
                 </div>
-                <div class="ui two column grid" style="margin-top:20px">
+                <div class="ui two column stackable grid" style="margin-top:20px">
                     <div class="row">
                         <div class="column">
                             <img src="assets/image/pet.png" class="ui rounded medium centered image">
@@ -60,11 +60,11 @@ $this->load->view('navigasi');
         <p>Mulai membantu mereka?</p>
     </div>
     <div class="ui center aligned container" style="margin-top:10px;font-size:18px">
-        <p>Halo #PecintaHewan, silahkan cari dan pilih hewan yang ingin kalian adopsi</p>
+        <p>Halo #ParaPecintaHewan, silahkan cari dan pilih hewan yang ingin kalian adopsi</p>
     </div>
     <div class="ui fluid action input" style="margin-top:20px;font-size:18px;padding-left:60px;padding-right:60px">
         <input type="text" placeholder="Cari hewan, atau penampungan hewan">
-        <div class="ui button">Search</div>
+        <div class="ui button">Cari</div>
     </div>
 </div>
 
@@ -312,14 +312,29 @@ $this->load->view('navigasi');
                         <div style="margin-left:5px">Kucing Persia</div>
                     </div>
                     <div style="display:flex;flex-direction:row">
-                        <div>Umur Hewan</div>
+                        <div>Jenis Kelamin</div>
+                        <div style="margin-left:5px">:</div>
+                        <div style="margin-left:5px">Jantan</div>
+                    </div>
+                    <div style="display:flex;flex-direction:row">
+                        <div>Umur</div>
                         <div style="margin-left:5px">:</div>
                         <div style="margin-left:5px">9 Bulan</div>
+                    </div>
+                    <div style="display:flex;flex-direction:row">
+                        <div>Warna</div>
+                        <div style="margin-left:5px">:</div>
+                        <div style="margin-left:5px">Putih</div>
                     </div>
                     <div style="display:flex;flex-direction:row">
                         <div>Kondisi Kesehatan</div>
                         <div style="margin-left:5px">:</div>
                         <div style="margin-left:5px">Sehat</div>
+                    </div>
+                    <div style="display:flex;flex-direction:row">
+                        <div>Biaya Adopsi</div>
+                        <div style="margin-left:5px">:</div>
+                        <div style="margin-left:5px">Rp 300.000</div>
                     </div>
                 </div>
                 <!-- Yang posting -->
@@ -341,7 +356,7 @@ $this->load->view('navigasi');
             </div>
         </div>
         <div class="actions">
-            <div class="ui brown right labeled icon button" onclick="$('.ui.tiny.second.modal').modal('show');">
+            <div class="ui brown right labeled icon button" onclick="$('.ui.large.second.modal').modal('show');">
                 Adopsi
                 <i class="paw icon"></i>
             </div>
@@ -350,14 +365,36 @@ $this->load->view('navigasi');
     <!-- Akhir Data Popup Pertama-->
 
     <!-- Data Popup Kedua -->
-    <div class="ui tiny second modal">
+    <div class="ui large second modal">
         <div class="header">
             Syarat dan Ketentuan
         </div>
         <div class="content">
-            <p>1. Bersedia merawat hewan peliharaan dengan baik.</p>
-            <p>2. Bersedia menyayangi hewan peliharaan.</p>
-            <p>3. Meluangkan waktu dan uang untuk keperluan hewan peliharaan.</p>
+            <div class="ui grid" style="padding:20px">
+                <div class="eight wide column">
+                    <h3>Syarat</h3>
+                    <p>1. Bersedia merawat hewan peliharaan dengan baik.</p>
+                    <p>2. Bersedia menyayangi hewan peliharaan.</p>
+                    <p>3. Memahami dan menjalankan prinsip 5 hak hewan.</p>
+                    <p>4. Pengadopsi dan keluarga tidak alergi terhadap bulu hewan.</p>
+                    <p>5. Bersedia menanggung biaya steril (jika ada).</p>
+                    <p>6. Bersedia memeriksa kondisi hewan secara berkala.</p>
+                    <p>7. Domisili malang</p>
+                </div>
+                <div class="eight wide column justified aligned">
+                    <h3>Ketentuan</h3>
+                    <p>1. Mampu secara finasial, tenaga dan waktu.</p>
+                    <p>2. Mampu memberikan kasih sayang dan segala kebutuhan hewan tersebut (hewan dengan kebutuhan
+                        khusus).</p>
+                    <p>3. Mendapat persetujuan dari anggota keluarga.</p>
+                    <p>4. Tidak untuk dipindah tangankan, tidak untuk dijual, tidak untuk sengaja dikembangbiakkan,
+                        tidak untuk disakiti atau disiksa, tidak untuk dijadikan hadiah, tidak untuk mainan anak - anak, tidak
+                        untuk dikandang terus menerus.</p>
+                    <p>5. Apabila pengadopsi tidak bisa memfoster lebih lama, pengadopsi wajib merawat sampai menemukan
+                        pengadopsi baru demi keselematan hewan tersebut.</p>
+                    <p>6. Wajib memberi laporan fostering (pengadopsian)</p>
+                </div>
+            </div>
         </div>
         <div class="actions">
             <div class="ui negative button">
@@ -377,7 +414,8 @@ $this->load->view('navigasi');
             Selesai
         </div>
         <div class="content">
-            <p>Pengajuan anda telah diproses kepada pihak penampungan hewan. Silahkan tunggu email konfirmasi untuk info lebih lanjut.</p>
+            <p>Pengajuan anda telah diproses kepada pihak penampungan hewan. Silahkan tunggu email konfirmasi untuk info
+                lebih lanjut.</p>
         </div>
         <div class="actions">
             <div class="ui positive right labeled icon button">
@@ -390,13 +428,15 @@ $this->load->view('navigasi');
 </div>
 
 <div class="ui center aligned container" style="margin-bottom:30px">
-    <div class="ui vertical animated large button" tabindex="0"
-        style="width:150px;background-color:#01a8de;color:white">
-        <div class="hidden content">Lihat Semua</div>
-        <div class="visible content">
-            <i class="angle double down icon"></i>
+    <a href="<?php echo base_url("adopsi");?>">
+        <div class="ui vertical animated large button" tabindex="0"
+            style="width:150px;background-color:#01a8de;color:white">
+            <div class="hidden content">Lihat Semua</div>
+            <div class="visible content">
+                <i class="angle double down icon"></i>
+            </div>
         </div>
-    </div>
+    </a>
 </div>
 
 <div class="ui container fluid" style="background-color:#00aeef;color:white">
@@ -404,35 +444,43 @@ $this->load->view('navigasi');
         <div style="padding-top:20px;font-size:32px">
             <p>Bantu Mereka Dengan Cara Lain?</p>
         </div>
-        <div class="ui two column grid" style="margin-top:30px;margin-bottom:30px">
+        <div class="ui two column stackable grid" style="margin-top:30px;margin-bottom:30px">
             <div class="row">
                 <div class="column">
-                    <img src="assets/image/relawan.jpg" class="ui large rounded centered image">
+                    <a href="<?php echo base_url("relawan");?>">
+                        <img src="assets/image/relawan.jpg" class="ui large rounded centered image">
+                    </a>
                 </div>
                 <div class="column middle aligned">
                     <p style="font-size:24px">Daftarkan Diri Sebagai Relawan</p>
                     <p>We can give your company superpowers to do things that they never thought possible. Let us
-                        delight your customers and empower your needs...through pure data analytics.(belom tau isi apa)
+                        delight your customers and empower your needs...through pure data analytics.
                         We can give your company superpowers to do things that they never thought possible. Let us
-                        delight your customers and empower your needs...through pure data analytics.(belom tau isi apa)
+                        delight your customers and empower your needs...through pure data analytics.
                     </p>
-                    <button class="ui inverted button">Daftar Sekarang</button>
+                    <a href="<?php echo base_url("relawan");?>">
+                        <button class="ui inverted button">Daftar Sekarang</button>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="ui two column grid" style="margin-top:30px;padding-bottom:50px">
+        <div class="ui two column stackable grid" style="margin-top:30px;padding-bottom:50px">
             <div class="row">
                 <div class="column  middle aligned">
                     <p style="font-size:24px">Berikan Donasi Untuk Penampungan Hewan</p>
                     <p>We can give your company superpowers to do things that they never thought possible. Let us
-                        delight your customers and empower your needs...through pure data analytics.(belom tau isi apa)
+                        delight your customers and empower your needs...through pure data analytics.
                         We can give your company superpowers to do things that they never thought possible. Let us
-                        delight your customers and empower your needs...through pure data analytics.(belom tau isi apa)
+                        delight your customers and empower your needs...through pure data analytics.
                     </p>
-                    <button class="ui inverted button">Donasi Sekarang</button>
+                    <a href="<?php echo base_url("donasi");?>">
+                        <button class="ui inverted button">Donasi Sekarang</button>
+                    </a>
                 </div>
                 <div class="column">
-                    <img src="assets/image/donasi.jpg" class="ui large rounded centered image">
+                    <a href="<?php echo base_url("donasi");?>">
+                        <img src="assets/image/donasi.jpg" class="ui large rounded centered image">
+                    </a>
                 </div>
             </div>
         </div>

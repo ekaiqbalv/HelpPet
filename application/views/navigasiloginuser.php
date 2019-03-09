@@ -84,42 +84,34 @@
         padding: 5em 0em;
     }
 
-    .secondary.pointing.menu .toc.item {
+    .secondary.menu .toc.item {
         display: none;
     }
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
         .ui.fixed.menu {
             display: none !important;
         }
 
-        .secondary.pointing.menu .item,
-        .secondary.pointing.menu .menu {
+        .secondary.inverted.menu .item,
+        .secondary.inverted.menu .menu {
             display: none;
         }
 
-        .secondary.pointing.menu .toc.item {
+        .secondary.inverted.menu .toc.item,
+        .secondary.inverted.menu .dropdown.item
+         {
             display: block;
-        }
-
-        .masthead.segment {
-            min-height: 350px;
-        }
-
-        .masthead h1.ui.header {
-            font-size: 2em;
-            margin-top: 1.5em;
-        }
-
-        .masthead h2 {
-            margin-top: 0.5em;
-            font-size: 1.5em;
         }
     }
     </style>
     <script>
     $(document)
         .ready(function() {
+            // create sidebar and attach to menu open
+            $('.ui.sidebar')
+                .sidebar('attach events', '.toc.item');
+
             $('.menu .item')
                 .tab();
             $('.ui.dropdown')
@@ -128,31 +120,51 @@
     </script>
 </head>
 
-<body>
-    <div class="ui inverted vertical center aligned segment" style="background-color:#cd8b62">
-        <div class="ui container">
-            <div class="ui large secondary inverted menu">
-                <div class="item" style="margin-right:10px">
-                    <a class="ui tiny image" href="<?php echo base_url("");?>">
-                        <img src="assets/image/HELPPET-LIGHT.png">
+<body class="pushable">
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar borderless menu left" style="background-color:#cd8b62">
+        <div class="item" style="margin-right:10px">
+            <a class="ui tiny image" href="<?php echo base_url("");?>">
+                <img src="assets/image/HELPPET-LIGHT.png">
+            </a>
+        </div>
+        <a class="item" href="<?php echo base_url("");?>">Beranda</a>
+        <a class="item" href="<?php echo base_url("adopsi");?>">Adopsi Hewan</a>
+        <a class="item" href="<?php echo base_url("penampunganhewan");?>">Penampungan Hewan</a>
+        <a class="item" href="<?php echo base_url("relawan");?>">Relawan</a>
+        <a class="item" href="<?php echo base_url("donasi");?>">Donasi</a>
+        <a class="item" href="<?php echo base_url("#");?>">Info Akun</a>
+        <a class="item" href="<?php echo base_url("#");?>">Keluar</a>
+    </div>
+
+    <div class="pusher">
+        <div class="ui inverted vertical center aligned segment" style="background-color:#cd8b62">
+            <div class="ui container">
+                <div class="ui large secondary inverted menu">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
                     </a>
-                </div>
-                <a class="item" href="<?php echo base_url("");?>">Beranda</a>
-                <a class="item" href="<?php echo base_url("adopsi");?>">Adopsi Hewan</a>
-                <a class="item" href="<?php echo base_url("penampunganhewan");?>">Penampungan Hewan</a>
-                <a class="item">Relawan</a>
-                <a class="item">Donasi</a>
-                <div class="right item">
-                    <a class="ui dropdown item" style="border:2px solid #f3e5dd">
-                        <i class="user circle icon"></i>
-                        <div style="color:white;font-size:16px">Akun</div>
-                        <i class="dropdown icon"></i>
-                        <div class="menu">
-                            <div class="item">Info Akun</div>
-                            <div class="item">Keluar</div>
-                        </div>
-                    </a>
+                    <div class="item" style="margin-right:10px">
+                        <a class="ui tiny image" href="<?php echo base_url("");?>">
+                            <img src="assets/image/HELPPET-LIGHT.png">
+                        </a>
+                    </div>
+                    <a class="item" href="<?php echo base_url("");?>">Beranda</a>
+                    <a class="item" href="<?php echo base_url("adopsi");?>">Adopsi Hewan</a>
+                    <a class="item" href="<?php echo base_url("penampunganhewan");?>">Penampungan Hewan</a>
+                    <a class="item" href="<?php echo base_url("relawan");?>">Relawan</a>
+                    <a class="item" href="<?php echo base_url("donasi");?>">Donasi</a>
+                    <div class="right item">
+                        <a class="ui dropdown item" style="border:2px solid #f3e5dd">
+                            <i class="user circle icon"></i>
+                            <div style="color:white;font-size:16px">Akun</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item">Info Akun</div>
+                                <div class="item">Keluar</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>

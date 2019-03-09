@@ -26,14 +26,15 @@
 </head>
 
 <body class="ui dimmable">
-    <div class="ui container" style="position:absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%)">
-        <a href="<?php echo base_url("");?>"><img class="ui small centered image" src="assets/image/HELPPET-DARK.png"
-                style="margin-bottom:10px"></a>
+    <div class="ui container fluid"
+        style="position:absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%)">
         <div class="ui container center aligned">
-            <div class="ui two column grid">
+            <a href="<?php echo base_url("");?>"><img class="ui small centered image"
+                    src="assets/image/HELPPET-DARK.png" style="margin-bottom:10px"></a>
+            <div class="ui two column stackable grid">
                 <div class="row">
                     <div class="column middle aligned">
-                        <div class="ui three row grid">
+                        <div class="ui three row stackable grid">
                             <div class="column" style="margin:10px">
                                 <div class="row" style="margin-bottom:5px;font-size:28px">
                                     Halo #ParaPecintaHewan!
@@ -176,6 +177,7 @@
             <a href="<?php echo base_url("masuk");?>"><button class="positive ui large button">Login</button></a>
         </div>
     </div>
+
 </body>
 
 </html>

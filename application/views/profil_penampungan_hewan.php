@@ -37,10 +37,11 @@ $this->load->view('navigasi');
 <div style="backgound-color:#e6e5e5;height:2px"></div>
 
 <div class="ui container">
-    <div class="ui grid">
-        <div class="left floated twelve wide column">
-            <div class="ui pointing secondary huge menu">
+    <div class="ui stackable grid">
+        <div class="left floated twelve wide stackable column">
+            <div class="ui pointing secondary huge stackable menu">
                 <a class="active item" data-tab="penampunganhewan-hewan">Hewan</a>
+                <a class="item" data-tab="penampunganhewan-relawan">Relawan</a>
                 <a class="item" data-tab="penampunganhewan-informasi">Informasi</a>
                 <a class="item" data-tab="penampunganhewan-donasi">Laporan Donasi</a>
             </div>
@@ -55,6 +56,115 @@ $this->load->view('navigasi');
                 </div>
                 <div class="ui four doubling link cards">
                     <div class="card" onclick="$('.ui.small.first.modal').modal('show');">
+                        <div class="image">
+                            <img src="assets/image/pet.png">
+                        </div>
+                        <div class="content">
+                            <div class="header">Yuki</div>
+                            <div class="meta">
+                                <a>Kucing</a>
+                            </div>
+                            <div class="description">
+                                Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span>
+                                <i class="home icon"></i>
+                                Nawak Nawek
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/image/pet.png">
+                        </div>
+                        <div class="content">
+                            <div class="header">Yuki</div>
+                            <div class="meta">
+                                <a>Kucing</a>
+                            </div>
+                            <div class="description">
+                                Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span>
+                                <i class="home icon"></i>
+                                Nawak Nawek
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/image/pet.png">
+                        </div>
+                        <div class="content">
+                            <div class="header">Yuki</div>
+                            <div class="meta">
+                                <a>Kucing</a>
+                            </div>
+                            <div class="description">
+                                Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                            </div>
+                        </div>
+                        <div class="extra content">
+
+                            <span>
+                                <i class="home icon"></i>
+                                Eka
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/image/pet.png">
+                        </div>
+                        <div class="content">
+                            <div class="header">Yuki</div>
+                            <div class="meta">
+                                <a>Kucing</a>
+                            </div>
+                            <div class="description">
+                                Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                            </div>
+                        </div>
+                        <div class="extra content">
+
+                            <span>
+                                <i class="home icon"></i>
+                                Nawak Nawek
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/image/pet.png">
+                        </div>
+                        <div class="content">
+                            <div class="header">Yuki</div>
+                            <div class="meta">
+                                <a>Kucing</a>
+                            </div>
+                            <div class="description">
+                                Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                            </div>
+                        </div>
+                        <div class="extra content">
+
+                            <span>
+                                <i class="home icon"></i>
+                                Nawak Nawek
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daftar Relawan -->
+            <div class="ui tab" data-tab="penampunganhewan-relawan">
+                <div class="ui four doubling link cards">
+                    <div class="card">
                         <div class="image">
                             <img src="assets/image/pet.png">
                         </div>
@@ -196,7 +306,7 @@ $this->load->view('navigasi');
                 </div>
 
                 <!-- Daftar donatur -->
-                <div style="font-size:24px;font-weight:bold;margin-top:20px;margin-bottom:20px">Daftar Donatur</div>
+                <div style="font-size:24px;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:center">Daftar Donatur</div>
                 <div class="ui one doubling cards">
                     <div class="card">
                         <div class="content">
@@ -311,106 +421,145 @@ $this->load->view('navigasi');
 
 <!-- Data Popup Pertama-->
 <div class="ui small first modal">
-        <i class="window close icon"></i>
-        <div class="header">
-            <div style="font-size:24px;font-weight:bold">Profil Hewan</div>
+    <i class="window close icon"></i>
+    <div class="header">
+        <div style="font-size:24px;font-weight:bold">Profil Hewan</div>
+    </div>
+    <div class="image content">
+        <div class="ui medium image">
+            <img src="assets/image/pet.png">
         </div>
-        <div class="image content">
-            <div class="ui medium image">
-                <img src="assets/image/pet.png">
-            </div>
-            <div class="description">
-                <!-- Nama hewannya -->
-                <div style="font-size:24px;font-weight:bold">Yuki</div>
-                <!-- Jenis hewan -->
-                <div style="font-size:16px">Kucing</div>
-                <!-- Deskripsi hewannya -->
-                <p style="margin-top:10px">Yuki merupakan kucing yang senang bermain bla bla bla bla bla blabla bla bla
-                    bla bla blabla bla bla
-                    bla bla bla</p>
-                <!-- Informasi hewan -->
-                <div style="display:flex;flex-direction:column">
-                    <div style="display:flex;flex-direction:row">
-                        <div>Ras Hewan</div>
-                        <div style="margin-left:5px">:</div>
-                        <div style="margin-left:5px">Kucing Persia</div>
-                    </div>
-                    <div style="display:flex;flex-direction:row">
-                        <div>Umur Hewan</div>
-                        <div style="margin-left:5px">:</div>
-                        <div style="margin-left:5px">9 Bulan</div>
-                    </div>
-                    <div style="display:flex;flex-direction:row">
-                        <div>Kondisi Kesehatan</div>
-                        <div style="margin-left:5px">:</div>
-                        <div style="margin-left:5px">Sehat</div>
-                    </div>
+        <div class="description">
+            <!-- Nama hewannya -->
+            <div style="font-size:24px;font-weight:bold">Yuki</div>
+            <!-- Jenis hewan -->
+            <div style="font-size:16px">Kucing</div>
+            <!-- Deskripsi hewannya -->
+            <p style="margin-top:10px">Yuki merupakan kucing yang senang bermain bla bla bla bla bla blabla bla bla
+                bla bla blabla bla bla
+                bla bla bla</p>
+            <!-- Informasi hewan -->
+            <div style="display:flex;flex-direction:column">
+                <div style="display:flex;flex-direction:row">
+                    <div>Ras Hewan</div>
+                    <div style="margin-left:5px">:</div>
+                    <div style="margin-left:5px">Kucing Persia</div>
                 </div>
-                <!-- Yang posting -->
-                <div style="margin-top:10px">
-                    <div style="font-size:16px;font-weight:bold;margin-bottom:2px">Diposting Oleh</div>
-                    <div class="ui grid">
-                        <div class="one wide column">
-                            <a href="<?php echo base_url("penampunganhewan");?>">
-                                <i class="home icon grey"></i>
-                            </a>
-                        </div>
-                        <div class="fourteen wide column" style="font-size:14px;">
-                            <a href="<?php echo base_url("penampunganhewan");?>" style="color:inherit">
-                                <div>Kelompok Pet Animal</div>
-                            </a>
-                        </div>
-                    </div>
+                <div style="display:flex;flex-direction:row">
+                    <div>Jenis Kelamin</div>
+                    <div style="margin-left:5px">:</div>
+                    <div style="margin-left:5px">Jantan</div>
+                </div>
+                <div style="display:flex;flex-direction:row">
+                    <div>Umur</div>
+                    <div style="margin-left:5px">:</div>
+                    <div style="margin-left:5px">9 Bulan</div>
+                </div>
+                <div style="display:flex;flex-direction:row">
+                    <div>Warna</div>
+                    <div style="margin-left:5px">:</div>
+                    <div style="margin-left:5px">Putih</div>
+                </div>
+                <div style="display:flex;flex-direction:row">
+                    <div>Kondisi Kesehatan</div>
+                    <div style="margin-left:5px">:</div>
+                    <div style="margin-left:5px">Sehat</div>
+                </div>
+                <div style="display:flex;flex-direction:row">
+                    <div>Biaya Adopsi</div>
+                    <div style="margin-left:5px">:</div>
+                    <div style="margin-left:5px">Rp 300.000</div>
                 </div>
             </div>
-        </div>
-        <div class="actions">
-            <div class="ui brown right labeled icon button" onclick="$('.ui.tiny.second.modal').modal('show');">
-                Adopsi
-                <i class="paw icon"></i>
+            <!-- Yang posting -->
+            <div style="margin-top:10px">
+                <div style="font-size:16px;font-weight:bold;margin-bottom:2px">Diposting Oleh</div>
+                <div class="ui grid">
+                    <div class="one wide column">
+                        <a href="<?php echo base_url("penampunganhewan");?>">
+                            <i class="home icon grey"></i>
+                        </a>
+                    </div>
+                    <div class="fourteen wide column" style="font-size:14px;">
+                        <a href="<?php echo base_url("penampunganhewan");?>" style="color:inherit">
+                            <div>Kelompok Pet Animal</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Akhir Data Popup Pertama-->
+    <div class="actions">
+        <div class="ui brown right labeled icon button" onclick="$('.ui.large.second.modal').modal('show');">
+            Adopsi
+            <i class="paw icon"></i>
+        </div>
+    </div>
+</div>
+<!-- Akhir Data Popup Pertama-->
 
-    <!-- Data Popup Kedua -->
-    <div class="ui tiny second modal">
-        <div class="header">
-            Syarat dan Ketentuan
-        </div>
-        <div class="content">
-            <p>1. Bersedia merawat hewan peliharaan dengan baik.</p>
-            <p>2. Bersedia menyayangi hewan peliharaan.</p>
-            <p>3. Meluangkan waktu dan uang untuk keperluan hewan peliharaan.</p>
-        </div>
-        <div class="actions">
-            <div class="ui negative button">
-                Tidak Setuju
+<!-- Data Popup Kedua -->
+<div class="ui large second modal">
+    <div class="header">
+        Syarat dan Ketentuan
+    </div>
+    <div class="content">
+        <div class="ui grid" style="padding:20px">
+            <div class="eight wide column">
+                <h3>Syarat</h3>
+                <p>1. Bersedia merawat hewan peliharaan dengan baik.</p>
+                <p>2. Bersedia menyayangi hewan peliharaan.</p>
+                <p>3. Memahami dan menjalankan prinsip 5 hak hewan.</p>
+                <p>4. Pengadopsi dan keluarga tidak alergi terhadap bulu hewan.</p>
+                <p>5. Bersedia menanggung biaya steril (jika ada).</p>
+                <p>6. Bersedia memeriksa kondisi hewan secara berkala.</p>
+                <p>7. Domisili malang</p>
             </div>
-            <div class="ui positive right labeled icon button" onclick="$('.ui.tiny.third.modal').modal('show');">
-                Setuju
-                <i class="checkmark icon"></i>
+            <div class="eight wide column justified aligned">
+                <h3>Ketentuan</h3>
+                <p>1. Mampu secara finasial, tenaga dan waktu.</p>
+                <p>2. Mampu memberikan kasih sayang dan segala kebutuhan hewan tersebut (hewan dengan kebutuhan
+                    khusus).</p>
+                <p>3. Mendapat persetujuan dari anggota keluarga.</p>
+                <p>4. Tidak untuk dipindah tangankan, tidak untuk dijual, tidak untuk sengaja dikembangbiakkan,
+                    tidak untuk disakiti atau disiksa, tidak untuk dijadikan hadiah, tidak untuk mainan anak - anak,
+                    tidak
+                    untuk dikandang terus menerus.</p>
+                <p>5. Apabila pengadopsi tidak bisa memfoster lebih lama, pengadopsi wajib merawat sampai menemukan
+                    pengadopsi baru demi keselematan hewan tersebut.</p>
+                <p>6. Wajib memberi laporan fostering (pengadopsian)</p>
             </div>
         </div>
     </div>
-    <!-- Akhir Data Popup Kedua-->
+    <div class="actions">
+        <div class="ui negative button">
+            Tidak Setuju
+        </div>
+        <div class="ui positive right labeled icon button" onclick="$('.ui.tiny.third.modal').modal('show');">
+            Setuju
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
+<!-- Akhir Data Popup Kedua-->
 
-    <!-- Data Popup Ketiga -->
-    <div class="ui tiny third modal">
-        <div class="header">
-            Selesai
-        </div>
-        <div class="content">
-            <p>Pengajuan anda telah diproses kepada pihak penampungan hewan. Silahkan tunggu email konfirmasi untuk info lebih lanjut.</p>
-        </div>
-        <div class="actions">
-            <div class="ui positive right labeled icon button">
-                Oke
-                <i class="checkmark icon"></i>
-            </div>
+<!-- Data Popup Ketiga -->
+<div class="ui tiny third modal">
+    <div class="header">
+        Selesai
+    </div>
+    <div class="content">
+        <p>Pengajuan anda telah diproses kepada pihak penampungan hewan. Silahkan tunggu email konfirmasi untuk info
+            lebih lanjut.</p>
+    </div>
+    <div class="actions">
+        <div class="ui positive right labeled icon button">
+            Oke
+            <i class="checkmark icon"></i>
         </div>
     </div>
-    <!-- Akhir Data Popup Ketiga -->
+</div>
+<!-- Akhir Data Popup Ketiga -->
 
 <?php
 // Load nav

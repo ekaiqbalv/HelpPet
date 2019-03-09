@@ -3,7 +3,7 @@
         <i class="paw icon huge brown"></i>
     </div>
     <div class="ui container">
-        <div class="ui two column grid">
+        <div class="ui two column stackable grid">
             <div class="row middle aligned">
                 <div class="column">
                     <a href="<?php echo base_url("");?>"><img class="ui medium image"
@@ -57,6 +57,7 @@
         </div>
     </div>
 </footer>
+</div>
 </body>
 
 </html>

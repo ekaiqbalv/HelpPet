@@ -52,7 +52,7 @@
 
 <body>
     <div class="ui container fluid"
-        style="position:absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);">
+        style="position:absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);margin:20px">
         <div class="ui container center aligned">
             <a href="<?php echo base_url("");?>">
                 <img class="ui centered medium image " src="assets/image/HELPPET-DARK.png">
@@ -76,7 +76,7 @@
                                     <input type="password" name="password" placeholder="Password">
                                 </div>
                             </div>
-                            <div class="ui two column grid">
+                            <div class="ui two column stackable grid">
                                 <div class="row">
                                     <div class="column left aligned">
                                         <div class="ui checkbox">
