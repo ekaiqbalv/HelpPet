@@ -62,7 +62,7 @@
             </div>
             <div class="ui container" style="width:40%">
                 <div class="ui container">
-                    <form class="ui form" style="padding:20px">
+                    <form class="ui form" style="padding:20px" method="post">
                         <div class="ui segment">
                             <div class="field" style="margin-top:20px">
                                 <div class="ui left icon input">
@@ -89,10 +89,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <a href="<?php echo base_url("halamanawalpengguna");?>">
                             <div class="ui fluid large teal submit button"
                                 style="margin-top:15px;margin-bottom:20px;background-color:#cd8b62">
                                 Login
                             </div>
+                            </a>
                             <div style="font-size:15px">Belum punya akun HelpPet?<a
                                     href="<?php echo base_url("daftar");?>" style="color:brown">
                                     Daftar</a></div>

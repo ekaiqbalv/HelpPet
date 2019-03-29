@@ -106,6 +106,17 @@
     <script>
     $(document)
         .ready(function() {
+            // fix menu when passed
+            $('.inverted.vertical')
+                .visibility({
+                    once: false,
+                    onBottomPassed: function() {
+                        $('.fixed.menu').transition('fade in');
+                    },
+                    onBottomPassedReverse: function() {
+                        $('.fixed.menu').transition('fade out');
+                    }
+                });
             // create sidebar and attach to menu open
             $('.ui.sidebar')
                 .sidebar('attach events', '.toc.item');
@@ -116,9 +127,72 @@
                 .dropdown();
         });
     </script>
+    <script>
+    //Salin Nilai
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+
+    //Popup Berhasil
+    var popupTimer;
+
+    function delayPopup(popup) {
+        popupTimer = setTimeout(function() {
+            $(popup).popup('hide')
+        }, 1000);
+    }
+    
+    $(document).ready(function() {
+        $('.copyToken').click(function() {
+            clearTimeout(popupTimer);
+            var $input = $(this).closest('div').find('.copyInput');
+            /* Select the text field */
+            $input.select();
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+            $(this)
+                .popup({
+                    title: 'Berhasil Disalin!',                    
+                    on: 'manual',
+                    exclusive: true
+                })
+                .popup('show');
+            // Hide popup after 5 seconds
+            delayPopup(this);
+        });
+    });
+    </script>
 </head>
 
 <body class="pushable">
+    <!-- Following Menu -->
+    <div class="ui large top borderless menu fixed transition hidden">
+        <div class="ui container">
+            <div class="item" style="margin-right:10px">
+                <a class="ui tiny image" href="<?php echo base_url("");?>">
+                    <img src="assets/image/HELPPET-DARK.png">
+                </a>
+            </div>
+            <a class="item" href="<?php echo base_url("");?>">Beranda</a>
+            <a class="item" href="<?php echo base_url("adopsi");?>">Adopsi Hewan</a>
+            <a class="item" href="<?php echo base_url("penampunganhewan");?>">Penampungan Hewan</a>
+            <a class="item" href="<?php echo base_url("relawan");?>">Relawan</a>
+            <a class="item" href="<?php echo base_url("donasi");?>">Donasi</a>
+            <div class="right item">
+                <a class="ui brown button" style="margin-right:15px" href="<?php echo base_url("masuk");?>">
+                    Masuk
+                </a>
+                <a class="ui brown button" href="<?php echo base_url("daftar");?>">
+                    Daftar
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Sidebar Menu -->
     <div class="ui vertical inverted sidebar borderless menu left" style="background-color:#cd8b62">
         <div class="item" style="margin-right:10px">

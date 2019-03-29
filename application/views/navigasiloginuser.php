@@ -15,6 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
+    <script src="http://semantic-ui.com/javascript/library/tablesort.js"></script>
 
     <style type="text/css">
     .hidden.menu {
@@ -99,28 +100,156 @@
         }
 
         .secondary.inverted.menu .toc.item,
-        .secondary.inverted.menu .dropdown.item
-         {
+        .secondary.inverted.menu .dropdown.item {
             display: block;
         }
+    }
+
+    .hidebutton {
+        display: none;
+    }
+
+    .showbutton {
+        display: block;
     }
     </style>
     <script>
     $(document)
         .ready(function() {
+            // fix menu when passed
+            $('.inverted.vertical')
+                .visibility({
+                    once: false,
+                    onBottomPassed: function() {
+                        $('.fixed.menu').transition('fade in');
+                    },
+                    onBottomPassedReverse: function() {
+                        $('.fixed.menu').transition('fade out');
+                    }
+                });
             // create sidebar and attach to menu open
             $('.ui.sidebar')
                 .sidebar('attach events', '.toc.item');
-
             $('.menu .item')
                 .tab();
             $('.ui.dropdown')
                 .dropdown();
+            $('table')
+                .tablesort();
         });
+    </script>
+    <script>
+    //Salin Nilai
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+
+    //Popup Berhasil
+    var popupTimer;
+
+    function delayPopup(popup) {
+        popupTimer = setTimeout(function() {
+            $(popup).popup('hide')
+        }, 1000);
+    }
+
+    $(document).ready(function() {
+        $('.copyToken').click(function() {
+            clearTimeout(popupTimer);
+            var $input = $(this).closest('div').find('.copyInput');
+            /* Select the text field */
+            $input.select();
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+            $(this)
+                .popup({
+                    title: 'Berhasil Disalin!',
+                    on: 'manual',
+                    exclusive: true
+                })
+                .popup('show');
+            // Hide popup after 5 seconds
+            delayPopup(this);
+        });
+    });
+
+    //Tampilkan gambar yang dipilih
+    function previewImage() {
+        document.getElementById("image-preview").style.display = "block";
+        var oFReader = new FileReader();
+        oFReader.readAsDataURL(document.getElementById("unggah_gambar").files[0]);
+
+        oFReader.onload = function(oFREvent) {
+            document.getElementById("image-preview").src = oFREvent.target.result;
+        };
+    };
     </script>
 </head>
 
 <body class="pushable">
+    <!-- Following Menu -->
+    <div class="ui large top borderless menu fixed transition hidden">
+        <div class="ui container">
+            <div class="item" style="margin-right:10px">
+                <a class="ui tiny image" href="<?php echo base_url("");?>">
+                    <img src="assets/image/HELPPET-DARK.png">
+                </a>
+            </div>
+            <a class="item" href="<?php echo base_url("");?>">Beranda</a>
+            <a class="item" href="<?php echo base_url("adopsi");?>">Adopsi Hewan</a>
+            <a class="item" href="<?php echo base_url("penampunganhewan");?>">Penampungan Hewan</a>
+            <a class="item" href="<?php echo base_url("relawan");?>">Relawan</a>
+            <a class="item" href="<?php echo base_url("donasi");?>">Donasi</a>
+            <div class="right item">
+                <div class="ui brown top right pointing dropdown button">
+                    <i class="user circle icon"></i>
+                    <span class="text">Akun</span>
+                    <div class="menu">
+                        <a href="<?php echo base_url("akunpengguna");?>">
+                            <div style="width:250px;padding:20px">
+                                <img class="ui circular centered image" src="assets/image/catadopt.jpg"
+                                    style="border:5px solid #cd8b62;padding:3px;width:100px;height:100px;object-fit:cover">
+                                <div style="font-size:18px;text-align:center;margin-top:15px;color:black">Eka
+                                    Iqbal
+                                    Virgiawan
+                                </div>
+                                <div style="font-weight:100;margin-top:10px;text-align:center;color:#4d4d4d">
+                                    ekaiqbalvirgiawan@gmail.com</div>
+                            </div>
+                        </a>
+                        <div class="divider"></div>
+                        <div class="header" style="font-size:14px">
+                            Info Akun
+                        </div>
+                        <a class="item" href="<?php echo base_url("akunpengguna");?>"
+                            style="margin-left:20px;margin-right:20px">
+                            Profil
+                        </a>
+                        <a class="item" href="<?php echo base_url("akunpengguna");?>"
+                            style="margin-left:20px;margin-right:20px">
+                            Adopsi
+                        </a>
+                        <a class="item" href="<?php echo base_url("akunpengguna");?>"
+                            style="margin-left:20px;margin-right:20px">
+                            Relawan
+                        </a>
+                        <a class="item" href="<?php echo base_url("akunpengguna");?>"
+                            style="margin-left:20px;margin-right:20px">
+                            Donasi
+                        </a>
+                        <button class="ui fluid brown button" style="margin-top:10px">
+                            <i class="sign-out icon"></i>
+                            Keluar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Sidebar Menu -->
     <div class="ui vertical inverted sidebar borderless menu left" style="background-color:#cd8b62">
         <div class="item" style="margin-right:10px">
@@ -133,8 +262,13 @@
         <a class="item" href="<?php echo base_url("penampunganhewan");?>">Penampungan Hewan</a>
         <a class="item" href="<?php echo base_url("relawan");?>">Relawan</a>
         <a class="item" href="<?php echo base_url("donasi");?>">Donasi</a>
-        <a class="item" href="<?php echo base_url("#");?>">Info Akun</a>
-        <a class="item" href="<?php echo base_url("#");?>">Keluar</a>
+        <div class="ui divider"></div>
+        <a class="item" href="<?php echo base_url("akunpengguna");?>">Info Akun</a>
+        <a class="item" href="<?php echo base_url("#");?>"><button class="ui fluid brown button"
+                style="margin-top:10px">
+                <i class="sign-out icon"></i>
+                Keluar
+            </button></a>
     </div>
 
     <div class="pusher">
@@ -155,15 +289,48 @@
                     <a class="item" href="<?php echo base_url("relawan");?>">Relawan</a>
                     <a class="item" href="<?php echo base_url("donasi");?>">Donasi</a>
                     <div class="right item">
-                        <a class="ui dropdown item" style="border:2px solid #f3e5dd">
+                        <div class="ui inverted top right pointing dropdown button">
                             <i class="user circle icon"></i>
-                            <div style="color:white;font-size:16px">Akun</div>
-                            <i class="dropdown icon"></i>
+                            <span class="text">Akun</span>
                             <div class="menu">
-                                <div class="item">Info Akun</div>
-                                <div class="item">Keluar</div>
+                                <a href="<?php echo base_url("akunpengguna");?>">
+                                    <div style="width:250px;padding:20px">
+                                        <img class="ui circular centered image" src="assets/image/catadopt.jpg"
+                                            style="border:5px solid #cd8b62;padding:3px;width:100px;height:100px;object-fit:cover">
+                                        <div style="font-size:18px;text-align:center;margin-top:15px;color:black">Eka
+                                            Iqbal
+                                            Virgiawan
+                                        </div>
+                                        <div style="font-weight:100;margin-top:10px;text-align:center;color:#4d4d4d">
+                                            ekaiqbalvirgiawan@gmail.com</div>
+                                    </div>
+                                </a>
+                                <div class="divider"></div>
+                                <div class="header" style="font-size:14px">
+                                    Info Akun
+                                </div>
+                                <a class="item" href="<?php echo base_url("akunpengguna");?>"
+                                    style="margin-left:20px;margin-right:20px">
+                                    Profil
+                                </a>
+                                <a class="item" href="<?php echo base_url("akunpengguna");?>"
+                                    style="margin-left:20px;margin-right:20px">
+                                    Adopsi
+                                </a>
+                                <a class="item" href="<?php echo base_url("akunpengguna");?>"
+                                    style="margin-left:20px;margin-right:20px">
+                                    Relawan
+                                </a>
+                                <a class="item" href="<?php echo base_url("akunpengguna");?>"
+                                    style="margin-left:20px;margin-right:20px">
+                                    Donasi
+                                </a>
+                                <button class="ui fluid brown button" style="margin-top:10px">
+                                    <i class="sign-out icon"></i>
+                                    Keluar
+                                </button>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>

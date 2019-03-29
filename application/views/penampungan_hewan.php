@@ -4,13 +4,13 @@ $this->load->view('navigasi');
 ?>
 
 <!-- Bagian Atas -->
-<div class="ui container fluid" style="background-color:#f5f5f5;padding-top:40px;padding-bottom:45px">
+<div class="ui container fluid" style="background-color:#f5f5f5;padding-top:50px;padding-bottom:50px">
     <div class="ui stackable grid" style="margin-left:50px;margin-right:50px">
         <div class="eight wide column">
             <img src="assets/image/imgpenampungan.jpeg" class="ui huge image" style="border-radius:15px">
         </div>
         <div class="eight wide column middle aligned">
-            <div style="margin-left:-120px;padding:65px;background-color:white;border-radius:15px">
+            <div style="margin-left:-120px;padding:50px;background-color:white;border-radius:15px">
                 <h1 style="font-size:40px;color:#3a3a3a">Penampungan Hewan</h1>
                 <div style="width:90px;height:3px;background-color:#3a3a3a;border-radius:10px"></div>
                 <p style="margin-top:10px;font-size:24px;line-height:1.7;text-align:justify">Mereka menyediakan tempat
@@ -51,56 +51,56 @@ $this->load->view('navigasi');
             </div>
             <div class="extra content center aligned">
                 <a href="<?php echo base_url("profilpenampunganhewan");?>">
-                    <button class="ui button brown">Kunjungi Profil</button>
+                    <button class="ui button brown fluid">Kunjungi Profil</button>
                 </a>
             </div>
         </div>
         <div class="card">
             <div class="image" style="margin:15px">
-                <img src="assets/image/profilpenampungan.jpg">
+                <img src="assets/image/shelter2.jpg">
             </div>
             <div class="content">
-                <div class="header">Kelompok Pet Animal</div>
+                <div class="header">Garda Satwa Indonesia</div>
                 <div class="meta">
                     <div style="display:flex;flex-direction:row">
                         <i class="map marker alternate icon"></i>
-                        <div>Malang</div>
+                        <div>Jakarta</div>
                     </div>
                 </div>
                 <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2010
+                    Penampungan hewan ini didirikan pada tahun 2006
                 </div>
             </div>
             <div class="extra content center aligned">
-                <button class="ui button brown">Kunjungi Profil</button>
+                <button class="ui button brown fluid">Kunjungi Profil</button>
             </div>
         </div>
         <div class="card">
             <div class="image" style="margin:15px">
-                <img src="assets/image/profilpenampungan.jpg">
+                <img src="assets/image/shelter3.jpg">
             </div>
             <div class="content">
-                <div class="header">Kelompok Pet Animal</div>
+                <div class="header">Rumah Kucing Bandung</div>
                 <div class="meta">
                     <div style="display:flex;flex-direction:row">
                         <i class="map marker alternate icon"></i>
-                        <div>Malang</div>
+                        <div>Bandung</div>
                     </div>
                 </div>
                 <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2010
+                    Penampungan hewan ini didirikan pada tahun 2013
                 </div>
             </div>
             <div class="extra content center aligned">
-                <button class="ui button brown">Kunjungi Profil</button>
+                <button class="ui button brown fluid">Kunjungi Profil</button>
             </div>
         </div>
         <div class="card">
             <div class="image" style="margin:15px">
-                <img src="assets/image/profilpenampungan.jpg">
+                <img src="assets/image/shelter1.jpg">
             </div>
             <div class="content">
-                <div class="header">Kelompok Pet Animal</div>
+                <div class="header">Nawak Nawek</div>
                 <div class="meta">
                     <div style="display:flex;flex-direction:row">
                         <i class="map marker alternate icon"></i>
@@ -108,51 +108,51 @@ $this->load->view('navigasi');
                     </div>
                 </div>
                 <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2010
+                    Penampungan hewan ini didirikan pada tahun 2015
                 </div>
             </div>
             <div class="extra content center aligned">
-                <button class="ui button brown">Kunjungi Profil</button>
+                <button class="ui button brown fluid">Kunjungi Profil</button>
             </div>
         </div>
         <div class="card">
             <div class="image" style="margin:15px">
-                <img src="assets/image/profilpenampungan.jpg">
+                <img src="assets/image/shelter7.png">
             </div>
             <div class="content">
-                <div class="header">Kelompok Pet Animal</div>
+                <div class="header">Bandung Dog Guardian</div>
                 <div class="meta">
                     <div style="display:flex;flex-direction:row">
                         <i class="map marker alternate icon"></i>
-                        <div>Malang</div>
+                        <div>Bandung</div>
                     </div>
                 </div>
                 <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2010
+                    Penampungan hewan ini didirikan pada tahun 2011
                 </div>
             </div>
             <div class="extra content center aligned">
-                <button class="ui button brown">Kunjungi Profil</button>
+                <button class="ui button brown fluid">Kunjungi Profil</button>
             </div>
         </div>
         <div class="card">
             <div class="image" style="margin:15px">
-                <img src="assets/image/profilpenampungan.jpg">
+                <img src="assets/image/shelter8.png">
             </div>
             <div class="content">
-                <div class="header">Kelompok Pet Animal</div>
+                <div class="header">Komunitas Penyelamat Kucing Terlantar Surabaya</div>
                 <div class="meta">
                     <div style="display:flex;flex-direction:row">
                         <i class="map marker alternate icon"></i>
-                        <div>Malang</div>
+                        <div>Surabaya</div>
                     </div>
                 </div>
                 <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2010
+                    Penampungan hewan ini didirikan pada tahun 2016
                 </div>
             </div>
             <div class="extra content center aligned">
-                <button class="ui button brown">Kunjungi Profil</button>
+                <button class="ui button brown fluid">Kunjungi Profil</button>
             </div>
         </div>
     </div>
@@ -195,7 +195,8 @@ $this->load->view('navigasi');
                 <div class="content" style="padding:30px 30px 20px 30px">
                     <div class="description" style="font-size:16px;line-height:1.7">
                         Jika anda berpikir untuk memelihara hewan peliharaan, coba pertimbangkan untuk mengadopsi
-                        hewan yang terlantar dan memberi mereka rumah untuk tinggal. Karena hal itu akan membantu pihak penampungan dan hewan tersebut.
+                        hewan yang terlantar dan memberi mereka rumah untuk tinggal. Karena hal itu akan membantu pihak
+                        penampungan dan hewan tersebut.
                     </div>
                 </div>
                 <div class="extra content">
@@ -213,11 +214,8 @@ $this->load->view('navigasi');
                 </div>
                 <div class="content" style="padding:30px 30px 20px 30px">
                     <div class="description" style="font-size:16px;line-height:1.7">
-                        Apakah anda tahu bahwa pihak penampungan hewan hampir tidak menerima dana dari pemerintah?.
-                        Semua yang mereka
-                        lakukan bergantung kepada kemurahan hati orang - orang seperti anda yang memilih untuk
-                        membuat
-                        perubahan.
+                        Selain memberikan bantuan berupa materi, anda juga bisa memberikan bantuan berupa waktu yang
+                        dapat anda luangkan untuk menjadi seorang relawan. Kami mempunyai beberapa pilihan untuk menjadi seorang relawan dan tentunya sesuai dengan anda.
                     </div>
                 </div>
                 <div class="extra content">

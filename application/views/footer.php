@@ -57,6 +57,20 @@
         </div>
     </div>
 </footer>
+<a href="<?php echo base_url("postinghewan");?>">
+    <button class="circular ui icon button" style="
+    width:70px;
+    height:70px;
+    position:fixed;
+	bottom:40px;
+	right:40px;
+	background-color:#cd8b62;
+	color:#FFF;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;">
+        <i class="icon large plus"></i>
+    </button>
+</a>
 </div>
 </body>
 

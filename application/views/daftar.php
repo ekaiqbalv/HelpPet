@@ -66,7 +66,7 @@
                                             <div class="field" style="margin-top:8px">
                                                 <div class="ui left icon input">
                                                     <i class="user icon"></i>
-                                                    <input type="text" name="nama" placeholder="Nama Lengkap">
+                                                    <input type="text" maxlength="20" name="nama" placeholder="Nama Lengkap">
                                                 </div>
                                             </div>
                                             <div class="field" style="margin-top:20px">
@@ -114,7 +114,7 @@
                                             <div class="field" style="margin-top:8px">
                                                 <div class="ui left icon input">
                                                     <i class="user icon"></i>
-                                                    <input type="text" name="namaPenampungan"
+                                                    <input type="text" maxlength="20" name="namaPenampungan"
                                                         placeholder="Nama Penampungan">
                                                 </div>
                                             </div>

@@ -1,51 +1,53 @@
 <?php
 // Load nav
-$this->load->view('navigasi');
+$this->load->view('navigasiloginuser');
 ?>
 
-<div class="ui container fluid">
-    <div class="ui stackable grid" style="margin:30px;background-color:#f6f6f6;border-radius: 15px;padding:30px 40px 30px 40px">
-        <div class="eight wide column middle aligned">
-            <div style="text-align:center">
-                <h1 style="font-size:30px;color:#3a3a3a">Temukan Hewan Peliharaan Yang Anda Inginkan</h1>
-            </div>
-            <div style="margin-top:25px">
-                <p style="font-size:22px">Banyak hewan peliharaan terlantar diluar sana yang menunggu
-                    untuk menemukan rumah yang sempurna bagi
-                    mereka untuk selamanya.</p>
-                <p style="font-size:22px">Mereka mencari seseorang, seseorang seperti anda. Adopsilah mereka, dan
-                    berikan mereka kesempatan kedua
-                    dalam hidupnya.</p>
-            </div>
-        </div>
-        <div class="eight wide column">
-            <img src="assets/image/imgadopsi.jpg" class="ui huge image" style="border-radius: 15px">
-        </div>
-    </div>
-</div>
-
-<div class="ui divider" style="margin-top:30px;margin-bottom:30px"></div>
-
-<div class="ui container" style="margin-bottom:30px">
-    <div style="font-size:24px">Halo #ParaPecintaHewan,</div>
-    <div style="font-size:20px;margin-top:10px">Silahkan cari atau pilih hewan yang ingin anda adopsi</div>
-    <div class="ui stackable grid" style="margin-top:10px">
-        <div class="twelve wide column">
-            <div class="ui action left icon input fluid" style="font-size:16px">
-                <i class="search icon"></i>
-                <input type="text" placeholder="Cari jenis hewan yang ingin diadopsi...">
-                <div class="ui button brown">Cari</div>
-            </div>
-        </div>
-        <div class="four wide column right aligned">
-            <div class="ui selection dropdown" style="font-size:16px">
-                <input type="hidden" name="postingan">
-                <i class="dropdown icon"></i>
-                <div class="default text">Pilih Postingan</div>
-                <div class="menu">
-                    <div class="item">Semua Postingan</div>
-                    <div class="item">Pengguna</div>
-                    <div class="item">Penampungan Hewan</div>
+<div class="ui container fluid" style="background-color:#cd8b62">
+    <div class="ui container center aligned">
+        <div class="ui three row stackable grid">
+            <div class="column">
+                <div class="row">
+                    <h1 style="font-size:36px;color:white">Bantuan Anda Membuat Mereka Hidup Bahagia</h1>
+                </div>
+                <div class="ui two column stackable grid" style="margin-top:20px">
+                    <div class="row">
+                        <div class="column">
+                            <img src="assets/image/pet.png" class="ui rounded medium centered image">
+                        </div>
+                        <div class="column middle aligned">
+                            <div class="ui two row grid">
+                                <div class="column">
+                                    <div class="row">
+                                        <h2 class="ui header">Apa Itu HelpPet?</h2>
+                                        <p style="color:white;font-size:16px">HelpPet merupakan pilihan yang tepat bagi
+                                            kamu untuk
+                                            mengadopsi, mencari pengadopsi, maupun berdonasi untuk hewan peliharaan yang
+                                            lucu!
+                                        </p>
+                                    </div>
+                                    <div class="row" style="margin-top:30px">
+                                        <h2 class="ui header">Berbagi Informasi Hewan Terlantar</h2>
+                                        <p style="color:white;font-size:16px">Selain itu, di HelpPet kamu juga bisa
+                                            membagikan
+                                            informasi tentang hewan peliharaan yang terlantar, lho!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:10px">
+                    <a href="<?php echo base_url("adopsi");?>">
+                        <div class="ui huge animated fade button" tabindex="0"
+                            style="border-radius:5px;margin-bottom:20px;background-color:#01a8de;color:white">
+                            <div class="visible content">Ingin Adopsi Mereka?</div>
+                            <div class="hidden content">
+                                Pilih Sekarang
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -53,6 +55,20 @@ $this->load->view('navigasi');
 </div>
 
 <div class="ui container">
+    <div class="ui center aligned container" style="margin-top:30px;font-size:36px">
+        <p>Mulai membantu mereka?</p>
+    </div>
+    <div class="ui center aligned container" style="margin-top:10px;font-size:18px">
+        <p>Halo #ParaPecintaHewan, silahkan cari dan pilih hewan yang ingin kalian adopsi</p>
+    </div>
+    <div class="ui fluid action input" style="margin-top:20px;font-size:18px;padding-left:60px;padding-right:60px">
+        <input type="text" placeholder="Cari hewan, atau penampungan hewan">
+        <div class="ui button brown">Cari</div>
+    </div>
+</div>
+
+<div class="ui container" style="margin-top:30px;margin-bottom:30px">
+
     <!-- Daftar hewan -->
     <div class="ui four doubling link cards">
         <div class="card" onclick="$('.ui.small.first.modal').modal('show');">
@@ -65,8 +81,7 @@ $this->load->view('navigasi');
                     <a>Kucing</a>
                 </div>
                 <div class="description">
-                    Yuki sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Yuki memiliki bulu warna coklat
+                Yuki sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Yuki memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
@@ -86,8 +101,7 @@ $this->load->view('navigasi');
                     <a>Kucing</a>
                 </div>
                 <div class="description">
-                    Boo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Boo memiliki bulu warna coklat
+                Boo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Boo memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
@@ -108,8 +122,7 @@ $this->load->view('navigasi');
                     <a>Anjing</a>
                 </div>
                 <div class="description">
-                    Toms sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Toms memiliki bulu warna coklat
+                Toms sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Toms memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
@@ -130,8 +143,7 @@ $this->load->view('navigasi');
                     <a>Kelinci</a>
                 </div>
                 <div class="description">
-                    Buster sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Buster memiliki bulu warna coklat
+                Buster sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Buster memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
@@ -152,8 +164,7 @@ $this->load->view('navigasi');
                     <a>Hamster</a>
                 </div>
                 <div class="description">
-                    Candie sangat mengemaskan. Ia menjadi hamster yang selalu menemani hari - hari anda dengan
-                    tingkahnya yang lucunya. Candie memiliki bulu warna coklat
+                Candie sangat mengemaskan. Ia menjadi hamster yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Candie memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
@@ -175,8 +186,7 @@ $this->load->view('navigasi');
                     <a>Anjing</a>
                 </div>
                 <div class="description">
-                    Dexter sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Dexter memiliki bulu warna coklat
+                Dexter sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Dexter memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
@@ -197,8 +207,7 @@ $this->load->view('navigasi');
                     <a>Anjing</a>
                 </div>
                 <div class="description">
-                    Ferguso sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan
-                    tingkahnya yang lucunya. Ferguso memiliki bulu warna coklat
+                Ferguso sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Ferguso memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
@@ -219,8 +228,7 @@ $this->load->view('navigasi');
                     <a>Kucing</a>
                 </div>
                 <div class="description">
-                    Nillo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Nillo memiliki bulu warna coklat
+                Nillo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Nillo memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
@@ -459,8 +467,69 @@ $this->load->view('navigasi');
             </a>
         </div>
     </div>
-    <!-- Akhir Data Popup Ketiga -->
+</div>
+<!-- Akhir Data Popup Ketiga -->
 
+<div class="ui center aligned container" style="margin-bottom:30px">
+    <a href="<?php echo base_url("adopsi");?>">
+        <div class="ui vertical animated large button" tabindex="0"
+            style="width:150px;background-color:#01a8de;color:white">
+            <div class="hidden content">Lihat Semua</div>
+            <div class="visible content">
+                <i class="angle double down icon"></i>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="ui container fluid" style="background-color:#00aeef;color:white">
+    <div class="ui center aligned container">
+        <div style="padding-top:20px;font-size:32px">
+            <p>Bantu Mereka Dengan Cara Lain?</p>
+        </div>
+        <div class="ui two column stackable grid" style="margin-top:30px;margin-bottom:30px">
+            <div class="row">
+                <div class="column">
+                    <a href="<?php echo base_url("relawan");?>">
+                        <img src="assets/image/relawan.jpg" class="ui large rounded centered image">
+                    </a>
+                </div>
+                <div class="column middle aligned">
+                    <div style="font-size:24px">Daftarkan Diri Sebagai Relawan</div>
+                    <div style="font-size:16px;margin-top:30px">
+                        We can give your company superpowers to do things that they never thought possible. Let us
+                        delight your customers and empower your needs...through pure data analytics.
+                        We can give your company superpowers to do things that they never thought possible. Let us
+                        delight your customers and empower your needs...through pure data analytics.
+                    </div>
+                    <a href="<?php echo base_url("relawan");?>">
+                        <button class="ui inverted button" style="margin-top:30px">Daftar Sekarang</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ui two column stackable grid" style="margin-top:30px;padding-bottom:50px">
+            <div class="row">
+                <div class="column  middle aligned">
+                <div style="font-size:24px">Berikan Donasi Untuk Penampungan Hewan</div>
+                    <div style="font-size:16px;margin-top:30px">
+                        We can give your company superpowers to do things that they never thought possible. Let us
+                        delight your customers and empower your needs...through pure data analytics.
+                        We can give your company superpowers to do things that they never thought possible. Let us
+                        delight your customers and empower your needs...through pure data analytics.
+                    </div>
+                    <a href="<?php echo base_url("donasi");?>">
+                        <button class="ui inverted button" style="margin-top:30px">Donasi Sekarang</button>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="<?php echo base_url("donasi");?>">
+                        <img src="assets/image/donasi.jpg" class="ui large rounded centered image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php

@@ -48,7 +48,6 @@ $this->load->view('navigasi');
                             </div>
                         </div>
                     </a>
-
                 </div>
             </div>
         </div>
@@ -64,17 +63,17 @@ $this->load->view('navigasi');
     </div>
     <div class="ui fluid action input" style="margin-top:20px;font-size:18px;padding-left:60px;padding-right:60px">
         <input type="text" placeholder="Cari hewan, atau penampungan hewan">
-        <div class="ui button">Cari</div>
+        <div class="ui button brown">Cari</div>
     </div>
 </div>
 
 <div class="ui container" style="margin-top:30px;margin-bottom:30px">
 
     <!-- Daftar hewan -->
-    <div class="ui five doubling link cards">
+    <div class="ui four doubling link cards">
         <div class="card" onclick="$('.ui.small.first.modal').modal('show');">
             <div class="image">
-                <img src="assets/image/pet.png">
+                <img src="assets/image/foto1.jpg" style="object-fit:cover;height:250px">
             </div>
             <div class="content">
                 <div class="header">Yuki</div>
@@ -82,27 +81,27 @@ $this->load->view('navigasi');
                     <a>Kucing</a>
                 </div>
                 <div class="description">
-                    Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                Yuki sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Yuki memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
                 <span>
                     <i class="home icon"></i>
-                    Nawak Nawek
+                    Kelompok Pet Animal
                 </span>
             </div>
         </div>
         <div class="card">
             <div class="image">
-                <img src="assets/image/pet.png">
+                <img src="assets/image/catadopt.jpg" style="object-fit:cover;height:250px">
             </div>
             <div class="content">
-                <div class="header">Yuki</div>
+                <div class="header">Boo</div>
                 <div class="meta">
                     <a>Kucing</a>
                 </div>
                 <div class="description">
-                    Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                Boo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Boo memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
@@ -115,15 +114,15 @@ $this->load->view('navigasi');
         </div>
         <div class="card">
             <div class="image">
-                <img src="assets/image/pet.png">
+                <img src="assets/image/foto2.jpg" style="object-fit:cover;height:250px">
             </div>
             <div class="content">
-                <div class="header">Yuki</div>
+                <div class="header">Toms</div>
                 <div class="meta">
-                    <a>Kucing</a>
+                    <a>Anjing</a>
                 </div>
                 <div class="description">
-                    Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                Toms sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Toms memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
@@ -136,149 +135,107 @@ $this->load->view('navigasi');
         </div>
         <div class="card">
             <div class="image">
-                <img src="assets/image/pet.png">
+                <img src="assets/image/foto3.jpg" style="object-fit:cover;height:250px">
             </div>
             <div class="content">
-                <div class="header">Yuki</div>
+                <div class="header">Buster</div>
                 <div class="meta">
-                    <a>Kucing</a>
+                    <a>Kelinci</a>
                 </div>
                 <div class="description">
-                    Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                Buster sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Buster memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
 
                 <span>
                     <i class="home icon"></i>
-                    Nawak Nawek
+                    Albar
                 </span>
             </div>
         </div>
         <div class="card">
             <div class="image">
-                <img src="assets/image/pet.png">
+                <img src="assets/image/foto4.jpg" style="object-fit:cover;height:250px">
             </div>
             <div class="content">
-                <div class="header">Yuki</div>
+                <div class="header">Candie</div>
                 <div class="meta">
-                    <a>Kucing</a>
+                    <a>Hamster</a>
                 </div>
                 <div class="description">
-                    Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                Candie sangat mengemaskan. Ia menjadi hamster yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Candie memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
 
                 <span>
                     <i class="home icon"></i>
-                    Nawak Nawek
+                    Rian
                 </span>
             </div>
         </div>
 
         <div class="card">
             <div class="image">
-                <img src="assets/image/pet.png">
+                <img src="assets/image/foto5.jpg" style="object-fit:cover;height:250px">
             </div>
             <div class="content">
-                <div class="header">Yuki</div>
+                <div class="header">Dexter</div>
                 <div class="meta">
-                    <a>Kucing</a>
+                    <a>Anjing</a>
                 </div>
                 <div class="description">
-                    Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                Dexter sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Dexter memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
 
                 <span>
                     <i class="home icon"></i>
-                    Nawak Nawek
+                    Garda Satwa Indonesia
                 </span>
             </div>
         </div>
         <div class="card">
             <div class="image">
-                <img src="assets/image/pet.png">
+                <img src="assets/image/foto6.jpg" style="object-fit:cover;height:250px">
             </div>
             <div class="content">
-                <div class="header">Yuki</div>
+                <div class="header">Ferguso</div>
                 <div class="meta">
-                    <a>Kucing</a>
+                    <a>Anjing</a>
                 </div>
                 <div class="description">
-                    Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                Ferguso sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Ferguso memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
 
                 <span>
                     <i class="home icon"></i>
-                    Nawak Nawek
+                    James
                 </span>
             </div>
         </div>
         <div class="card">
             <div class="image">
-                <img src="assets/image/pet.png">
+                <img src="assets/image/foto7.jpg" style="object-fit:cover;height:250px">
             </div>
             <div class="content">
-                <div class="header">Yuki</div>
+                <div class="header">Nillo</div>
                 <div class="meta">
                     <a>Kucing</a>
                 </div>
                 <div class="description">
-                    Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                Nillo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya yang lucunya. Nillo memiliki bulu warna coklat
                 </div>
             </div>
             <div class="extra content">
 
                 <span>
                     <i class="home icon"></i>
-                    Nawak Nawek
-                </span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="assets/image/pet.png">
-            </div>
-            <div class="content">
-                <div class="header">Yuki</div>
-                <div class="meta">
-                    <a>Kucing</a>
-                </div>
-                <div class="description">
-                    Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
-                </div>
-            </div>
-            <div class="extra content">
-
-                <span>
-                    <i class="home icon"></i>
-                    Nawak Nawek
-                </span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="assets/image/pet.png">
-            </div>
-            <div class="content">
-                <div class="header">Yuki</div>
-                <div class="meta">
-                    <a>Kucing</a>
-                </div>
-                <div class="description">
-                    Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
-                </div>
-            </div>
-            <div class="extra content">
-
-                <span>
-                    <i class="home icon"></i>
-                    Nawak Nawek
+                    Pondok Pengayom Satwa
                 </span>
             </div>
         </div>
@@ -293,7 +250,7 @@ $this->load->view('navigasi');
         </div>
         <div class="image content">
             <div class="ui medium image">
-                <img src="assets/image/pet.png">
+                <img src="assets/image/foto1.jpg">
             </div>
             <div class="description">
                 <!-- Nama hewannya -->
@@ -301,9 +258,9 @@ $this->load->view('navigasi');
                 <!-- Jenis hewan -->
                 <div style="font-size:16px">Kucing</div>
                 <!-- Deskripsi hewannya -->
-                <p style="margin-top:10px">Yuki merupakan kucing yang senang bermain bla bla bla bla bla blabla bla bla
-                    bla bla blabla bla bla
-                    bla bla bla</p>
+                <p style="margin-top:10px">Yuki sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda
+                                dengan tingkahnya
+                                yang lucunya. Yuki memiliki bulu warna coklat</p>
                 <!-- Informasi hewan -->
                 <div style="display:flex;flex-direction:column">
                     <div style="display:flex;flex-direction:row">
@@ -347,7 +304,7 @@ $this->load->view('navigasi');
                             </a>
                         </div>
                         <div class="fourteen wide column" style="font-size:14px;">
-                            <a href="<?php echo base_url("penampunganhewan");?>" style="color:inherit">
+                            <a href="<?php echo base_url("profilpenampunganhewan");?>" style="color:inherit">
                                 <div>Kelompok Pet Animal</div>
                             </a>
                         </div>
@@ -388,7 +345,8 @@ $this->load->view('navigasi');
                         khusus).</p>
                     <p>3. Mendapat persetujuan dari anggota keluarga.</p>
                     <p>4. Tidak untuk dipindah tangankan, tidak untuk dijual, tidak untuk sengaja dikembangbiakkan,
-                        tidak untuk disakiti atau disiksa, tidak untuk dijadikan hadiah, tidak untuk mainan anak - anak, tidak
+                        tidak untuk disakiti atau disiksa, tidak untuk dijadikan hadiah, tidak untuk mainan anak - anak,
+                        tidak
                         untuk dikandang terus menerus.</p>
                     <p>5. Apabila pengadopsi tidak bisa memfoster lebih lama, pengadopsi wajib merawat sampai menemukan
                         pengadopsi baru demi keselematan hewan tersebut.</p>
@@ -411,21 +369,106 @@ $this->load->view('navigasi');
     <!-- Data Popup Ketiga -->
     <div class="ui tiny third modal">
         <div class="header">
-            Selesai
+            Metode Pembayaran
         </div>
         <div class="content">
-            <p>Pengajuan anda telah diproses kepada pihak penampungan hewan. Silahkan tunggu email konfirmasi untuk info
-                lebih lanjut.</p>
+            <div class="ui stackable centered grid">
+                <div class="six wide column">
+                    <img class="ui centered rounded image" src="assets/image/foto1.jpg">
+                    <div style="font-size:20px;font-weight:bold;text-align:center">Yuki</div>
+                </div>
+                <div class="ten wide column" style="padding-left:20px">
+                    <div style="font-size:16px;">Anda akan mengadopsi hewan dari penampungan hewan :</div>
+                    <div style="margin-top:5px;margin-bottom:5px;font-size:18px;font-weight:bold">Kelompok Pet Animal
+                    </div>
+                    <div class="ui grid">
+                        <div class="column">
+                            <i class="map marker alternate grey icon"></i>
+                        </div>
+                        <div class="column">
+                            <div style="font-size:16px">Malang</div>
+                        </div>
+                    </div>
+                    <div style="font-size:18px;font-weight:bold;margin-top:5px">Biaya Adopsi</div>
+                    <div style="display:flex;flex-direction:row;font-weight:bold;margin-left:15px">
+                        <div style="font-size:16px;color:#4d4d4d">Rp</div>
+                        <div id="coba" style="margin-left:10px;font-size:16px;color:#4d4d4d">300.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui divider"></div>
+            <div class="ui fluid scrolling dropdown" style="font-size:16px">
+                <input type="hidden" name="postingan">
+                <div class="default text">
+                    <div style="font-size:18px">
+                        <b>Pilih Metode Pembayaran</b>
+                    </div>
+                </div>
+                <div class="menu fluid">
+                    <div class="item">
+                        <div style="display:flex;flex-direction:row;align-items:center;padding:5px 10px 5px 10px">
+                            <div>
+                                <img class="ui tiny image" src="assets/image/bankbca.png">
+                            </div>
+                            <div style="font-size:17px;font-weight:bold;margin-left:40px">
+                                Transfer BCA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div style="display:flex;flex-direction:row;align-items:center;padding:5px 10px 5px 10px">
+                            <div>
+                                <img class="ui tiny image" src="assets/image/bankmandiri.png">
+                            </div>
+                            <div style="font-size:17px;font-weight:bold;margin-left:40px">
+                                Transfer Mandiri
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div style="display:flex;flex-direction:row;align-items:center;padding:5px 10px 5px 10px">
+                            <div>
+                                <img class="ui tiny image" src="assets/image/bankbri.png">
+                            </div>
+                            <div style="font-size:17px;font-weight:bold;margin-left:40px">
+                                Transfer BRI
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div style="display:flex;flex-direction:row;align-items:center;padding:5px 10px 5px 10px">
+                            <div>
+                                <img class="ui tiny image" src="assets/image/bankbni.png">
+                            </div>
+                            <div style="font-size:17px;font-weight:bold;margin-left:40px">
+                                Transfer BNI
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div style="display:flex;flex-direction:row;align-items:center;padding:5px 10px 5px 10px">
+                            <div>
+                                <img class="ui tiny image" src="assets/image/bankcimb.png">
+                            </div>
+                            <div style="font-size:17px;font-weight:bold;margin-left:40px">
+                                Transfer CIMB
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui divider"></div>
         </div>
         <div class="actions">
-            <div class="ui positive right labeled icon button">
-                Oke
-                <i class="checkmark icon"></i>
-            </div>
+            <a href="<?php echo base_url("instruksipembayaranadopsi");?>">
+                <button class="ui positive button">
+                    Lanjut Pembayaran
+                </button>
+            </a>
         </div>
     </div>
-    <!-- Akhir Data Popup Ketiga -->
 </div>
+<!-- Akhir Data Popup Ketiga -->
 
 <div class="ui center aligned container" style="margin-bottom:30px">
     <a href="<?php echo base_url("adopsi");?>">
@@ -452,14 +495,15 @@ $this->load->view('navigasi');
                     </a>
                 </div>
                 <div class="column middle aligned">
-                    <p style="font-size:24px">Daftarkan Diri Sebagai Relawan</p>
-                    <p>We can give your company superpowers to do things that they never thought possible. Let us
+                    <div style="font-size:24px">Daftarkan Diri Sebagai Relawan</div>
+                    <div style="font-size:16px;margin-top:30px">
+                        We can give your company superpowers to do things that they never thought possible. Let us
                         delight your customers and empower your needs...through pure data analytics.
                         We can give your company superpowers to do things that they never thought possible. Let us
                         delight your customers and empower your needs...through pure data analytics.
-                    </p>
+                    </div>
                     <a href="<?php echo base_url("relawan");?>">
-                        <button class="ui inverted button">Daftar Sekarang</button>
+                        <button class="ui inverted button" style="margin-top:30px">Daftar Sekarang</button>
                     </a>
                 </div>
             </div>
@@ -467,14 +511,15 @@ $this->load->view('navigasi');
         <div class="ui two column stackable grid" style="margin-top:30px;padding-bottom:50px">
             <div class="row">
                 <div class="column  middle aligned">
-                    <p style="font-size:24px">Berikan Donasi Untuk Penampungan Hewan</p>
-                    <p>We can give your company superpowers to do things that they never thought possible. Let us
+                <div style="font-size:24px">Berikan Donasi Untuk Penampungan Hewan</div>
+                    <div style="font-size:16px;margin-top:30px">
+                        We can give your company superpowers to do things that they never thought possible. Let us
                         delight your customers and empower your needs...through pure data analytics.
                         We can give your company superpowers to do things that they never thought possible. Let us
                         delight your customers and empower your needs...through pure data analytics.
-                    </p>
+                    </div>
                     <a href="<?php echo base_url("donasi");?>">
-                        <button class="ui inverted button">Donasi Sekarang</button>
+                        <button class="ui inverted button" style="margin-top:30px">Donasi Sekarang</button>
                     </a>
                 </div>
                 <div class="column">
