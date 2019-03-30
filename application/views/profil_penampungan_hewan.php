@@ -93,7 +93,6 @@ $this->load->view('navigasi');
                             </div>
                         </div>
                         <div class="extra content">
-
                             <span>
                                 <i class="home icon"></i>
                                 Kelompok Pet Animal
@@ -116,7 +115,6 @@ $this->load->view('navigasi');
                             </div>
                         </div>
                         <div class="extra content">
-
                             <span>
                                 <i class="home icon"></i>
                                 Kelompok Pet Animal
@@ -139,7 +137,6 @@ $this->load->view('navigasi');
                             </div>
                         </div>
                         <div class="extra content">
-
                             <span>
                                 <i class="home icon"></i>
                                 Kelompok Pet Animal
@@ -162,7 +159,6 @@ $this->load->view('navigasi');
                             </div>
                         </div>
                         <div class="extra content">
-
                             <span>
                                 <i class="home icon"></i>
                                 Kelompok Pet Animal
@@ -186,7 +182,6 @@ $this->load->view('navigasi');
                             </div>
                         </div>
                         <div class="extra content">
-
                             <span>
                                 <i class="home icon"></i>
                                 Kelompok Pet Animal
@@ -209,7 +204,6 @@ $this->load->view('navigasi');
                             </div>
                         </div>
                         <div class="extra content">
-
                             <span>
                                 <i class="home icon"></i>
                                 Kelompok Pet Animal
@@ -232,7 +226,6 @@ $this->load->view('navigasi');
                             </div>
                         </div>
                         <div class="extra content">
-
                             <span>
                                 <i class="home icon"></i>
                                 Kelompok Pet Animal

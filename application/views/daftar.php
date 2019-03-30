@@ -139,6 +139,13 @@
                                                         placeholder="Alamat Tempat Penampungan">
                                                 </div>
                                             </div>
+                                            <div class="field" style="margin-top:20px">
+                                                <div class="ui left icon input">
+                                                <i class="map marker alternate icon"></i>
+                                                    <input type="text" name="domisiliPenampungan"
+                                                        placeholder="Domisili Tempat Penampungan">
+                                                </div>
+                                            </div>
                                             <div class="field">
                                                 <div class="ui left icon input">
                                                     <i class="lock icon"></i>

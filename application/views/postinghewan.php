@@ -50,8 +50,8 @@ $this->load->view('navigasiloginuser');
                     <i class="dropdown icon"></i>
                     <div class="default text">Pilih Jenis Kelamin Hewan</div>
                     <div class="menu">
-                        <div class="item" data-value="1">Jantan</div>
-                        <div class="item" data-value="0">Betinas</div>
+                        <div class="item">Jantan</div>
+                        <div class="item">Betina</div>
                     </div>
                 </div>
             </div>
