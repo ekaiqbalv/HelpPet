@@ -21,12 +21,14 @@ class Adopsi extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('m_user');
+		$this->load->model('m_postingHewan');
 	}
 
 	public function index()
 	{
 		$where = array('email' => $this->session->userdata('email'));
 		$data['user'] = $this->m_user->tampil_user($where)->result();
+		$data['postingHewan'] = $this->m_postingHewan->tampil_postingHewan()->result();
 		$this->load->view('halaman_adopsi', $data);
 
 	}
