@@ -21,11 +21,14 @@ class PenampunganHewan extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('m_user');
+		$this->load->model('m_penampungan');
 	}
 	public function index()
 	{
 		$where = array('email' => $this->session->userdata('email'));
 		$data['user'] = $this->m_user->tampil_user($where)->result();
+		$data['penampungan'] = $this->m_penampungan->tampil_penampungan()->result();
 		$this->load->view('penampungan_hewan', $data);
+
 	}
 }

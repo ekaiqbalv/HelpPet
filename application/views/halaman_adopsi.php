@@ -57,182 +57,28 @@ if ($statuslogin == "login"){
 <div class="ui container">
     <!-- Daftar hewan -->
     <div class="ui four doubling link cards">
+    <?php foreach ($postingHewan as $u) {?>
         <div class="card" onclick="$('.ui.small.first.modal').modal('show');">
             <div class="image">
-                <img src="assets/image/foto1.jpg" style="object-fit:cover;height:250px">
+                <img src="<?php echo $u->foto?>" style="object-fit:cover;height:250px">
             </div>
             <div class="content">
-                <div class="header">Yuki</div>
+                <div class="header"><?php echo $u->nama?></div>
                 <div class="meta">
-                    <a>Kucing</a>
+                    <a><?php echo $u->jenis?></a>
                 </div>
                 <div class="description">
-                    Yuki sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Yuki memiliki bulu warna coklat
+                    <?php echo $u->deskripsi?>
                 </div>
             </div>
             <div class="extra content">
                 <span>
                     <i class="home icon"></i>
-                    Kelompok Pet Animal
+                    <?php echo $u->penampungan?>
                 </span>
             </div>
         </div>
-        <div class="card">
-            <div class="image">
-                <img src="assets/image/catadopt.jpg" style="object-fit:cover;height:250px">
-            </div>
-            <div class="content">
-                <div class="header">Boo</div>
-                <div class="meta">
-                    <a>Kucing</a>
-                </div>
-                <div class="description">
-                    Boo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Boo memiliki bulu warna coklat
-                </div>
-            </div>
-            <div class="extra content">
-
-                <span>
-                    <i class="home icon"></i>
-                    Eka
-                </span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="assets/image/foto2.jpg" style="object-fit:cover;height:250px">
-            </div>
-            <div class="content">
-                <div class="header">Toms</div>
-                <div class="meta">
-                    <a>Anjing</a>
-                </div>
-                <div class="description">
-                    Toms sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Toms memiliki bulu warna coklat
-                </div>
-            </div>
-            <div class="extra content">
-
-                <span>
-                    <i class="home icon"></i>
-                    Nawak Nawek
-                </span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="assets/image/foto3.jpg" style="object-fit:cover;height:250px">
-            </div>
-            <div class="content">
-                <div class="header">Buster</div>
-                <div class="meta">
-                    <a>Kelinci</a>
-                </div>
-                <div class="description">
-                    Buster sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Buster memiliki bulu warna coklat
-                </div>
-            </div>
-            <div class="extra content">
-
-                <span>
-                    <i class="home icon"></i>
-                    Albar
-                </span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="assets/image/foto4.jpg" style="object-fit:cover;height:250px">
-            </div>
-            <div class="content">
-                <div class="header">Candie</div>
-                <div class="meta">
-                    <a>Hamster</a>
-                </div>
-                <div class="description">
-                    Candie sangat mengemaskan. Ia menjadi hamster yang selalu menemani hari - hari anda dengan
-                    tingkahnya yang lucunya. Candie memiliki bulu warna coklat
-                </div>
-            </div>
-            <div class="extra content">
-
-                <span>
-                    <i class="home icon"></i>
-                    Rian
-                </span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="assets/image/foto5.jpg" style="object-fit:cover;height:250px">
-            </div>
-            <div class="content">
-                <div class="header">Dexter</div>
-                <div class="meta">
-                    <a>Anjing</a>
-                </div>
-                <div class="description">
-                    Dexter sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Dexter memiliki bulu warna coklat
-                </div>
-            </div>
-            <div class="extra content">
-
-                <span>
-                    <i class="home icon"></i>
-                    Garda Satwa Indonesia
-                </span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="assets/image/foto6.jpg" style="object-fit:cover;height:250px">
-            </div>
-            <div class="content">
-                <div class="header">Ferguso</div>
-                <div class="meta">
-                    <a>Anjing</a>
-                </div>
-                <div class="description">
-                    Ferguso sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan
-                    tingkahnya yang lucunya. Ferguso memiliki bulu warna coklat
-                </div>
-            </div>
-            <div class="extra content">
-
-                <span>
-                    <i class="home icon"></i>
-                    James
-                </span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="assets/image/foto7.jpg" style="object-fit:cover;height:250px">
-            </div>
-            <div class="content">
-                <div class="header">Nillo</div>
-                <div class="meta">
-                    <a>Kucing</a>
-                </div>
-                <div class="description">
-                    Nillo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
-                    yang lucunya. Nillo memiliki bulu warna coklat
-                </div>
-            </div>
-            <div class="extra content">
-
-                <span>
-                    <i class="home icon"></i>
-                    Pondok Pengayom Satwa
-                </span>
-            </div>
-        </div>
+    <?php }?>
     </div>
     <!-- Akhir Daftar hewan -->
 

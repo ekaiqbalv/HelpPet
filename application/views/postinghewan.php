@@ -12,7 +12,7 @@ if ($statuslogin == "login"){
             Bagikan informasi mengenai hewan peliharaan yang membutuhkan pengadopsi disini.
         </div>
         <div class="ui divider"></div>
-
+        <form class="ui form" style="margin-top:15px" action="<?php echo base_url('PostingHewan/postingHewan')?>" method="post" enctype="multipart/form-data">
         <!-- Upload Foto  Hewan -->
         <div class="ui container fluid" style="margin-top:20px">
             <div style="font-size:18px"><b>Foto Hewan</b></div>
@@ -23,65 +23,67 @@ if ($statuslogin == "login"){
                 <i class="cloud upload icon"></i>
                 Unggah Foto
             </label>
-            <input type="file" id="unggah_gambar" onchange="previewImage();" style="display: none">
+            <input type="file" id="unggah_gambar" name="photo" onchange="previewImage();" style="display: none" required="">
         </div>
+        </br>
         <!-- Akhir Upload Foto  Hewan -->
-
-        <form class="ui form" style="margin-top:15px">
+            
+        
             <div class="field">
                 <label style="font-size:18px">Deskripsi Singkat Hewan</label>
-                <textarea maxlength="144" rows="4"
-                    placeholder="Tuliskan pesan atau dukungan anda untuk penampungan hewan."></textarea>
+                <textarea name = "deskripsi" maxlength="144" rows="4"
+                    placeholder="Tuliskan pesan atau dukungan anda untuk penampungan hewan." required=""></textarea>
             </div>
             <div class="field">
                 <label style="font-size:18px">Nama Hewan</label>
-                <input type="text" name="namahewan" placeholder="Masukkan Nama Hewan">
+                <input type="text" name="namahewan" placeholder="Masukkan Nama Hewan" required="">
             </div>
             <div class="field">
                 <label style="font-size:18px">Jenis Hewan</label>
-                <input type="text" name="jenishewan" placeholder="Masukkan Jenis Hewan">
+                <input type="text" name="jenishewan" placeholder="Masukkan Jenis Hewan" required="">
             </div>
             <div class="field">
                 <label style="font-size:18px">Ras Hewan</label>
-                <input type="text" name="rashewan" placeholder="Masukkan Ras Hewan">
+                <input type="text" name="rashewan" placeholder="Masukkan Ras Hewan" required=""> 
             </div>
             <div class="field">
                 <label style="font-size:18px">Jenis Kelamin Hewan</label>
                 <div class="ui selection dropdown">
-                    <input type="hidden" name="jeniskelaminhewan">
+                    <input type="hidden" name="jeniskelaminhewan" required="">
                     <i class="dropdown icon"></i>
                     <div class="default text">Pilih Jenis Kelamin Hewan</div>
                     <div class="menu">
-                        <div class="item">Jantan</div>
-                        <div class="item">Betina</div>
+                        <div class="item" value="Jantan">Jantan</div>
+                        <div class="item" value="Betina">Betina</div>
                     </div>
                 </div>
             </div>
             <div class="field">
                 <label style="font-size:18px">Umur Hewan</label>
                 <div class="ui right labeled fluid input">
-                    <input type="number" name="umurhewan" placeholder="Masukkan Umur Hewan">
+                    <input type="number" name="umurhewan" placeholder="Masukkan Umur Hewan" required="">
                     <label class="ui label" style="background-color:#cd8b62;color:white">Bulan</label>
                 </div>
             </div>
             <div class="field">
                 <label style="font-size:18px">Warna Bulu Hewan</label>
-                <input type="text" name="warnahewan" placeholder="Masukkan Warna Bulu Hewan">
+                <input type="text" name="warnahewan" placeholder="Masukkan Warna Bulu Hewan" required="">
             </div>
             <div class="field">
                 <label style="font-size:18px">Kondisi Kesehatan Hewan</label>
-                <input type="text" name="kondisihewan" placeholder="Kondisi Kesehatan">
+                <input type="text" name="kondisihewan" placeholder="Kondisi Kesehatan" required="">
             </div>
             <div class="field">
                 <label style="font-size:18px">Biaya Adopsi Hewan</label>
                 <div class="ui labeled fluid input">
                     <label class="ui label" style="background-color:#cd8b62;color:white">Rp</label>
-                    <input type="number" name="biayaadopsi" placeholder="Masukkan Biaya Adopsi">
+                    <input type="number" name="biayaadopsi" placeholder="Masukkan Biaya Adopsi" >
                 </div>
             </div>
-        </form>
-        <button class="ui big button fluid" onclick="$('.ui.tiny.modal').modal('show')" type="submit"
+            <button class="ui big button fluid" type="submit"
             style="margin-top:40px;background-color:#cd8b62;color:white">Posting</button>
+        </form>
+        
     </div>
 </div>
 
@@ -94,8 +96,6 @@ if ($statuslogin == "login"){
         <p style="font-size:16px;line-height:1.5">
             Postingan anda akan dibagikan kepada semua pengguna HelpPet. Silahkan tunggu pengajuan adopsi dari pengguna
             yang berminat. Dan terimakasih sudah menggunakan HelpPet.
-            <!-- Pengajuan anda akan diproses kepada pihak penampungan hewan setelah pembayaran terkonfirmasi. Silahkan
-            tunggu email konfirmasi dari pihak penampungan hewan untuk info lebih lanjut. -->
         </p>
     </div>
     <div class="actions">

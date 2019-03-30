@@ -35,20 +35,22 @@ if ($statuslogin == "login"){
 <div class="ui container" style="margin-top:30px">
     <!-- Daftar hewan -->
     <div class="ui four doubling link cards">
+        <?php foreach ($penampungan as $u){?>
         <div class="card">
             <div class="image" style="margin:15px">
                 <img src="assets/image/profilpenampungan.jpg">
+                // src nya diganti sm echo u foto
             </div>
             <div class="content">
-                <div class="header">Kelompok Pet Animal</div>
+                <div class="header"><?php echo $u->nm_penampungan?></div>
                 <div class="meta">
                     <div style="display:flex;flex-direction:row">
                         <i class="map marker alternate icon"></i>
-                        <div>Malang</div>
+                        <div><?php echo $u->alamat?></div>
                     </div>
                 </div>
                 <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2010
+                <?php echo $u->email?>
                 </div>
             </div>
             <div class="extra content center aligned">
@@ -57,106 +59,8 @@ if ($statuslogin == "login"){
                 </a>
             </div>
         </div>
-        <div class="card">
-            <div class="image" style="margin:15px">
-                <img src="assets/image/shelter2.jpg">
-            </div>
-            <div class="content">
-                <div class="header">Garda Satwa Indonesia</div>
-                <div class="meta">
-                    <div style="display:flex;flex-direction:row">
-                        <i class="map marker alternate icon"></i>
-                        <div>Jakarta</div>
-                    </div>
-                </div>
-                <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2006
-                </div>
-            </div>
-            <div class="extra content center aligned">
-                <button class="ui button brown fluid">Kunjungi Profil</button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image" style="margin:15px">
-                <img src="assets/image/shelter3.jpg">
-            </div>
-            <div class="content">
-                <div class="header">Rumah Kucing Bandung</div>
-                <div class="meta">
-                    <div style="display:flex;flex-direction:row">
-                        <i class="map marker alternate icon"></i>
-                        <div>Bandung</div>
-                    </div>
-                </div>
-                <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2013
-                </div>
-            </div>
-            <div class="extra content center aligned">
-                <button class="ui button brown fluid">Kunjungi Profil</button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image" style="margin:15px">
-                <img src="assets/image/shelter1.jpg">
-            </div>
-            <div class="content">
-                <div class="header">Nawak Nawek</div>
-                <div class="meta">
-                    <div style="display:flex;flex-direction:row">
-                        <i class="map marker alternate icon"></i>
-                        <div>Malang</div>
-                    </div>
-                </div>
-                <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2015
-                </div>
-            </div>
-            <div class="extra content center aligned">
-                <button class="ui button brown fluid">Kunjungi Profil</button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image" style="margin:15px">
-                <img src="assets/image/shelter7.png">
-            </div>
-            <div class="content">
-                <div class="header">Bandung Dog Guardian</div>
-                <div class="meta">
-                    <div style="display:flex;flex-direction:row">
-                        <i class="map marker alternate icon"></i>
-                        <div>Bandung</div>
-                    </div>
-                </div>
-                <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2011
-                </div>
-            </div>
-            <div class="extra content center aligned">
-                <button class="ui button brown fluid">Kunjungi Profil</button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image" style="margin:15px">
-                <img src="assets/image/shelter8.png">
-            </div>
-            <div class="content">
-                <div class="header">Komunitas Penyelamat Kucing Terlantar Surabaya</div>
-                <div class="meta">
-                    <div style="display:flex;flex-direction:row">
-                        <i class="map marker alternate icon"></i>
-                        <div>Surabaya</div>
-                    </div>
-                </div>
-                <div class="description">
-                    Penampungan hewan ini didirikan pada tahun 2016
-                </div>
-            </div>
-            <div class="extra content center aligned">
-                <button class="ui button brown fluid">Kunjungi Profil</button>
-            </div>
-        </div>
+        <?php }?>
+        
     </div>
     <!-- Akhir Daftar Hewan -->
 </div>
