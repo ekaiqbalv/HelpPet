@@ -135,6 +135,9 @@
             $('.special.cards .image').dimmer({
                 on: 'hover'
             });
+            $('.special.cards .segments').dimmer({
+                on: 'hover'
+            });
             //Ganti button ketika diklik
             $('.terima').click(function() {
                 $(this).addClass('hidebutton');
@@ -213,35 +216,36 @@
                     <i class="user circle icon"></i>
                     <span class="text">Akun</span>
                     <div class="menu">
-                        <a href="<?php echo base_url("halamanpengguna");?>">
+                        <a href="<?php echo base_url("akunpengguna");?>">
+                            <?php foreach ($user as $u) {?>
                             <div style="width:250px;padding:20px">
                                 <img class="ui circular centered image" src="assets/image/catadopt.jpg"
                                     style="border:5px solid #cd8b62;padding:3px;width:100px;height:100px;object-fit:cover">
-                                <div style="font-size:18px;text-align:center;margin-top:15px;color:black">Eka
-                                    Iqbal
-                                    Virgiawan
+                                <div style="font-size:18px;text-align:center;margin-top:15px;color:black">
+                                    <?php echo $u->username;?>
                                 </div>
                                 <div style="font-weight:100;margin-top:10px;text-align:center;color:#4d4d4d">
-                                    ekaiqbalvirgiawan@gmail.com</div>
+                                    <?php echo $u->email?></div>
                             </div>
+                            <?php }?>
                         </a>
                         <div class="divider"></div>
                         <div class="header" style="font-size:14px">
                             Info Akun
                         </div>
-                        <a class="item" href="<?php echo base_url("halamanpengguna");?>"
+                        <a class="item" href="<?php echo base_url("akunpengguna");?>"
                             style="margin-left:20px;margin-right:20px">
                             Profil
                         </a>
-                        <a class="item" href="<?php echo base_url("halamanpengguna");?>"
+                        <a class="item" href="<?php echo base_url("akunpengguna");?>"
                             style="margin-left:20px;margin-right:20px">
                             Adopsi
                         </a>
-                        <a class="item" href="<?php echo base_url("halamanpengguna");?>"
+                        <a class="item" href="<?php echo base_url("akunpengguna");?>"
                             style="margin-left:20px;margin-right:20px">
                             Relawan
                         </a>
-                        <a class="item" href="<?php echo base_url("halamanpengguna");?>"
+                        <a class="item" href="<?php echo base_url("akunpengguna");?>"
                             style="margin-left:20px;margin-right:20px">
                             Donasi
                         </a>
@@ -250,13 +254,15 @@
                             Halaman Admin
                         </a>
                         <a class="item" href="<?php echo base_url("halamanpenampungan");?>"
-                                    style="margin-left:20px;margin-right:20px">
-                                    Halaman Penampungan
-                                </a>
-                        <button class="ui fluid brown button" style="margin-top:10px">
-                            <i class="sign-out icon"></i>
-                            Keluar
-                        </button>
+                            style="margin-left:20px;margin-right:20px">
+                            Halaman Penampungan
+                        </a>
+                        <a href=<?php echo base_url("keluar");?> style="text-decoration: none">
+                            <button class="ui fluid brown button" style="margin-top:10px">
+                                <i class="sign-out icon"></i>
+                                Keluar
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -275,12 +281,13 @@
         <a class="item" href="<?php echo base_url("relawan");?>">Relawan</a>
         <a class="item" href="<?php echo base_url("donasi");?>">Donasi</a>
         <div class="ui divider"></div>
-        <a class="item" href="<?php echo base_url("halamanpengguna");?>">Info Akun</a>
-        <a class="item" href="<?php echo base_url("#");?>"><button class="ui fluid brown button"
-                style="margin-top:10px">
+        <a class="item" href="<?php echo base_url("akunpengguna");?>">Info Akun</a>
+        <a href=<?php echo base_url("keluar");?> style="text-decoration: none">
+            <button class="ui fluid brown button" style="margin-top:10px">
                 <i class="sign-out icon"></i>
                 Keluar
-            </button></a>
+            </button>
+        </a>
     </div>
 
     <div class="pusher">
@@ -295,7 +302,7 @@
                             <img src="assets/image/HELPPET-LIGHT.png">
                         </a>
                     </div>
-                    <a class="item" href="<?php echo base_url("");?>">Beranda</a>
+                    <a class="item" href="<?php echo base_url("beranda");?>">Beranda</a>
                     <a class="item" href="<?php echo base_url("adopsi");?>">Adopsi Hewan</a>
                     <a class="item" href="<?php echo base_url("penampunganhewan");?>">Penampungan Hewan</a>
                     <a class="item" href="<?php echo base_url("relawan");?>">Relawan</a>
@@ -305,35 +312,36 @@
                             <i class="user circle icon"></i>
                             <span class="text">Akun</span>
                             <div class="menu">
-                                <a href="<?php echo base_url("halamanpengguna");?>">
+                                <a href="<?php echo base_url("akunpengguna");?>">
+                                    <?php foreach ($user as $u) {?>
                                     <div style="width:250px;padding:20px">
                                         <img class="ui circular centered image" src="assets/image/catadopt.jpg"
                                             style="border:5px solid #cd8b62;padding:3px;width:100px;height:100px;object-fit:cover">
-                                        <div style="font-size:18px;text-align:center;margin-top:15px;color:black">Eka
-                                            Iqbal
-                                            Virgiawan
+                                        <div style="font-size:18px;text-align:center;margin-top:15px;color:black">
+                                            <?php echo $u->username?>
                                         </div>
                                         <div style="font-weight:100;margin-top:10px;text-align:center;color:#4d4d4d">
-                                            ekaiqbalvirgiawan@gmail.com</div>
+                                            <?php echo $u->email?></div>
                                     </div>
+                                    <?php }?>
                                 </a>
                                 <div class="divider"></div>
                                 <div class="header" style="font-size:14px">
                                     Info Akun
                                 </div>
-                                <a class="item" href="<?php echo base_url("halamanpengguna");?>"
+                                <a class="item" href="<?php echo base_url("akunpengguna");?>"
                                     style="margin-left:20px;margin-right:20px">
                                     Profil
                                 </a>
-                                <a class="item" href="<?php echo base_url("halamanpengguna");?>"
+                                <a class="item" href="<?php echo base_url("akunpengguna");?>"
                                     style="margin-left:20px;margin-right:20px">
                                     Adopsi
                                 </a>
-                                <a class="item" href="<?php echo base_url("halamanpengguna");?>"
+                                <a class="item" href="<?php echo base_url("akunpengguna");?>"
                                     style="margin-left:20px;margin-right:20px">
                                     Relawan
                                 </a>
-                                <a class="item" href="<?php echo base_url("halamanpengguna");?>"
+                                <a class="item" href="<?php echo base_url("akunpengguna");?>"
                                     style="margin-left:20px;margin-right:20px">
                                     Donasi
                                 </a>
@@ -345,10 +353,12 @@
                                     style="margin-left:20px;margin-right:20px">
                                     Halaman Penampungan
                                 </a>
-                                <button class="ui fluid brown button" style="margin-top:10px">
-                                    <i class="sign-out icon"></i>
-                                    Keluar
-                                </button>
+                                <a href=<?php echo base_url("keluar");?> style="text-decoration: none">
+                                    <button class="ui fluid brown button" style="margin-top:10px">
+                                        <i class="sign-out icon"></i>
+                                        Keluar
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>

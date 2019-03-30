@@ -1,7 +1,9 @@
-<?php
+<?php 
 // Load nav
-$this->load->view('navigasi');
-?>
+$statuslogin = $this->session->userdata('status');
+if ($statuslogin == "login"){
+    $this->load->view('navigasiloginuser');
+} else {$this->load->view('navigasi');} ?>
 
 <div class="ui container fluid" style="background-color: #F5F5F5">
     <div class="ui center aligned container">
@@ -54,7 +56,7 @@ $this->load->view('navigasi');
                         <i class="search icon"></i>
                     </div>
                 </div>
-                <div class="ui four doubling link cards">
+                <div class="ui three doubling link cards">
                     <div class="card" onclick="$('.ui.small.first.modal').modal('show');">
                         <div class="image">
                             <img src="assets/image/foto1.jpg" style="object-fit:cover;height:200px">
@@ -237,113 +239,70 @@ $this->load->view('navigasi');
 
             <!-- Daftar Relawan -->
             <div class="ui tab" data-tab="penampunganhewan-relawan">
-                <h2>Dalam Proses Pengerjaan</h2>
-                <!-- <div class="ui four doubling link cards">
+                <div class="ui three doubling link cards">
                     <div class="card">
                         <div class="image">
-                            <img src="assets/image/pet.png">
+                            <img src="assets/image/foto1.jpg" style="object-fit:cover;height:200px">
                         </div>
                         <div class="content">
-                            <div class="header">Yuki</div>
+                            <div class="header">Perawat Kucing</div>
                             <div class="meta">
-                                <a>Kucing</a>
-                            </div>
-                            <div class="description">
-                                Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                                <i class="home icon"></i>
+                                Kelompok Pet Animal
                             </div>
                         </div>
-                        <div class="extra content">
-                            <span>
-                                <i class="home icon"></i>
-                                Nawak Nawek
-                            </span>
+                        <div class="extra content center aligned">
+                            <button class="ui button brown fluid">Daftar</button>
                         </div>
                     </div>
                     <div class="card">
                         <div class="image">
-                            <img src="assets/image/pet.png">
+                            <img src="assets/image/penampungan3.jpg" style="object-fit:cover;height:200px">
                         </div>
                         <div class="content">
-                            <div class="header">Yuki</div>
+                            <div class="header">Perawat Anjing</div>
                             <div class="meta">
-                                <a>Kucing</a>
-                            </div>
-                            <div class="description">
-                                Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                                <i class="home icon"></i>
+                                Kelompok Pet Animal
                             </div>
                         </div>
-                        <div class="extra content">
-                            <span>
-                                <i class="home icon"></i>
-                                Nawak Nawek
-                            </span>
+                        <div class="extra content center aligned">
+                            <button class="ui button brown fluid">Daftar</button>
                         </div>
                     </div>
                     <div class="card">
                         <div class="image">
-                            <img src="assets/image/pet.png">
+                            <img src="assets/image/penampungan4.jpg" style="object-fit:cover;height:200px">
                         </div>
                         <div class="content">
-                            <div class="header">Yuki</div>
+                            <div class="header">Perawat Kelinci</div>
                             <div class="meta">
-                                <a>Kucing</a>
-                            </div>
-                            <div class="description">
-                                Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                                <i class="home icon"></i>
+                                Kelompok Pet Animal
                             </div>
                         </div>
-                        <div class="extra content">
-
-                            <span>
-                                <i class="home icon"></i>
-                                Eka
-                            </span>
+                        <div class="extra content center aligned">
+                            <button class="ui button brown fluid">Daftar</button>
                         </div>
                     </div>
                     <div class="card">
                         <div class="image">
-                            <img src="assets/image/pet.png">
+                            <img src="assets/image/penampungan5.jpg" style="object-fit:cover;height:200px">
                         </div>
                         <div class="content">
-                            <div class="header">Yuki</div>
+                            <div class="header">Perawat Hamster</div>
                             <div class="meta">
-                                <a>Kucing</a>
-                            </div>
-                            <div class="description">
-                                Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
+                                <i class="home icon"></i>
+                                Kelompok Pet Animal
                             </div>
                         </div>
-                        <div class="extra content">
-
-                            <span>
-                                <i class="home icon"></i>
-                                Nawak Nawek
-                            </span>
+                        <div class="extra content center aligned">
+                            <button class="ui button brown fluid">Daftar</button>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="image">
-                            <img src="assets/image/pet.png">
-                        </div>
-                        <div class="content">
-                            <div class="header">Yuki</div>
-                            <div class="meta">
-                                <a>Kucing</a>
-                            </div>
-                            <div class="description">
-                                Yuki merupakan kucing yang senang bermain bla bla bla bla bla bla
-                            </div>
-                        </div>
-                        <div class="extra content">
-
-                            <span>
-                                <i class="home icon"></i>
-                                Nawak Nawek
-                            </span>
-                        </div>
-                    </div>
-                </div> -->
+                </div>
             </div>
+            <!-- Akhir Daftar Relawan -->
 
             <!-- Informasi penampungan hewan -->
             <div class="ui tab" data-tab="penampunganhewan-informasi"

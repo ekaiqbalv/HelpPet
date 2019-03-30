@@ -10,12 +10,10 @@ $this->load->view('navigasiloginuser');
                 style="min-width:280px;border:3px solid #ebc589;border-radius:5px;background-color:#f7efd2;padding:40px 30px 30px 30px">
                 <img class="ui circular centered image" src="assets/image/catadopt.jpg"
                     style="width:150px;height:150px;object-fit:cover;border:5px solid #ebc589;padding:3px">
-                <?php foreach ($user as $u ) {?>
                 <div
                     style="text-align:center;line-height:1.5;font-size:22px;margin-top:20px;margin-bottom:20px;color:#4d4d4d">
-                    <b><?php echo $u->username?></b>
+                    <b>Eka Iqbal Virgiawan</b>
                 </div>
-                <?php }?>
                 <div class="ui divider" style="margin-top:10px;margin-bottom:20px"></div>
                 <div class="ui secondary vertical pointing fluid menu" style="color:#4d4d4d;font-size:17px">
                     <a class="active item" data-tab="profil">
@@ -49,23 +47,21 @@ $this->load->view('navigasiloginuser');
                 <div
                     style="margin-top:20px;background-color:#f7efd2;border:5px solid #ebc589;border-radius:5px;padding:40px 50px 40px 50px;color:#4d4d4d">
                     <div>
-                        <?php foreach($user as $u) { ?>
                         <label style="font-size:22px"><b>Nama Lengkap</b></label>
-                        <div style="font-size:18px;margin-top:10px"><?php echo $u->username?></div>
+                        <div style="font-size:18px;margin-top:10px">Eka Iqbal Virgiawan</div>
                     </div>
                     <div style="margin-top:30px">
                         <label style="font-size:22px"><b>Alamat Email</b></label>
-                        <div style="font-size:18px;margin-top:10px"><?php echo $u->email?></div>
+                        <div style="font-size:18px;margin-top:10px">ekaiqbalvirgiawan @gmail.com</div>
                     </div>
                     <div style="margin-top:30px">
                         <label style="font-size:22px"><b>Nomor Telepon</b></label>
-                        <div style="font-size:18px;margin-top:10px"><?php echo $u->telp?></div>
+                        <div style="font-size:18px;margin-top:10px">08221234567</div>
                     </div>
                     <div style="margin-top:30px">
                         <label style="font-size:22px"><b>Alamat Tempat Tinggal</b></label>
-                        <div style="font-size:18px;margin-top:10px"><?php echo $u->alamat?></div>
+                        <div style="font-size:18px;margin-top:10px">Jalan Veteran, Malang, Jawa Timur</div>
                     </div>
-                    <?php  }?>
                 </div>
             </div>
             <div class="ui tab" data-tab="postingan">
@@ -78,7 +74,7 @@ $this->load->view('navigasiloginuser');
                     <div style="font-size:20px">
                         <b>Silahkan pilih salah satu postingan yang ingin anda ubah</b>
                     </div>
-                    <div class="ui stackable three doubling special centered cards" style="margin-top:10px">
+                    <div class="ui three doubling special centered cards" style="margin-top:10px">
                         <div class="card">
                             <div class="blurring dimmable image">
                                 <div class="ui dimmer">
@@ -331,7 +327,7 @@ $this->load->view('navigasiloginuser');
                     </div>
                 </div>
                 <div style="margin-top:30px;padding:20px 40px 20px 40px;border-radius:5px;background-color:#F7EFD2">
-                    <div class="ui stackable grid">
+                    <div class="ui grid">
                         <div class="one wide column middle aligned">
                             <i class="info circle big brown icon"></i>
                         </div>

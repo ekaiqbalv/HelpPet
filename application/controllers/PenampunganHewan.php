@@ -18,8 +18,14 @@ class PenampunganHewan extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct(){
+		parent::__construct();
+		$this->load->model('m_user');
+	}
 	public function index()
 	{
-		$this->load->view('penampungan_hewan');
+		$where = array('email' => $this->session->userdata('email'));
+		$data['user'] = $this->m_user->tampil_user($where)->result();
+		$this->load->view('penampungan_hewan', $data);
 	}
 }

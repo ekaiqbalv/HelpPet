@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class HalamanAwalPengguna extends CI_Controller {
+class HalamanAdmin extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,15 +18,8 @@ class HalamanAwalPengguna extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	function __construct(){
-		parent::__construct();
-		$this->load->model('m_user');
-	}
-	
 	public function index()
 	{
-		$where = array('email' => $this->session->userdata('email'));
-		$data['user'] = $this->m_user->tampil_user($where)->result();
-		$this->load->view('halaman_awal_pengguna', $data);
+		$this->load->view('akunadmin/halamanadmin');
 	}
 }
