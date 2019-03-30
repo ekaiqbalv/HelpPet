@@ -1,7 +1,9 @@
-<?php
+<?php 
 // Load nav
-$this->load->view('navigasi');
-?>
+$statuslogin = $this->session->userdata('status');
+if ($statuslogin == "login"){
+    $this->load->view('navigasiloginuser');
+} else {$this->load->view('navigasi');} ?>
 
 <div class="ui container fluid">
     <div class="ui stackable grid" style="margin:30px;background-color:#f6f6f6;border-radius: 15px;padding:30px 40px 30px 40px">

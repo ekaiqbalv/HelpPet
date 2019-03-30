@@ -1,7 +1,6 @@
-<?php
+<?php 
 // Load nav
-$this->load->view('navigasi');
-?>
+$this->load->view('navigasi'); ?>
 
 <div class="ui container fluid" style="background-color:#cd8b62">
     <div class="ui container center aligned">

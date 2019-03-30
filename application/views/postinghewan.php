@@ -1,7 +1,9 @@
-<?php
+<?php 
 // Load nav
-$this->load->view('navigasiloginuser');
-?>
+$statuslogin = $this->session->userdata('status');
+if ($statuslogin == "login"){
+    $this->load->view('navigasiloginuser');
+} else {$this->load->view('navigasi');} ?>
 
 <div class="ui container" style="color:#4d4d4d;margin-top:50px">
     <div style="max-width:600px;margin: 0 auto;border:1px solid #e1e2e3;border-radius:6px;padding:40px 45px 40px 45px">

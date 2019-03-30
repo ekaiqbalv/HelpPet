@@ -1,7 +1,9 @@
-<?php
+<?php 
 // Load nav
-$this->load->view('navigasi');
-?>
+$statuslogin = $this->session->userdata('status');
+if ($statuslogin == "login"){
+    $this->load->view('navigasiloginuser');
+} else {$this->load->view('navigasi');} ?>
 
 <!-- <h1 style="text-align:center;padding:290px 0px 290px 0px">Dalam Proses Pengerjaan</h1> -->
 <!-- <div class="ui container fluid">

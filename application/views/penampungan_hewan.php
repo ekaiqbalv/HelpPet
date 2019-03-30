@@ -1,7 +1,9 @@
-<?php
+<?php 
 // Load nav
-$this->load->view('navigasi');
-?>
+$statuslogin = $this->session->userdata('status');
+if ($statuslogin == "login"){
+    $this->load->view('navigasiloginuser');
+} else {$this->load->view('navigasi');} ?>
 
 <!-- Bagian Atas -->
 <div class="ui container fluid" style="background-color:#f5f5f5;padding-top:50px;padding-bottom:50px">

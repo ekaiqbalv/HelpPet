@@ -210,16 +210,16 @@
                     <span class="text">Akun</span>
                     <div class="menu">
                         <a href="<?php echo base_url("akunpengguna");?>">
+                            <?php foreach ($user as $u) {?>
                             <div style="width:250px;padding:20px">
                                 <img class="ui circular centered image" src="assets/image/catadopt.jpg"
                                     style="border:5px solid #cd8b62;padding:3px;width:100px;height:100px;object-fit:cover">
-                                <div style="font-size:18px;text-align:center;margin-top:15px;color:black">Eka
-                                    Iqbal
-                                    Virgiawan
+                                <div style="font-size:18px;text-align:center;margin-top:15px;color:black"><?php echo $u->username;?>
                                 </div>
                                 <div style="font-weight:100;margin-top:10px;text-align:center;color:#4d4d4d">
-                                    ekaiqbalvirgiawan@gmail.com</div>
+                                <?php echo $u->email?></div>
                             </div>
+                            <?php }?>
                         </a>
                         <div class="divider"></div>
                         <div class="header" style="font-size:14px">
@@ -283,7 +283,7 @@
                             <img src="assets/image/HELPPET-LIGHT.png">
                         </a>
                     </div>
-                    <a class="item" href="<?php echo base_url("");?>">Beranda</a>
+                    <a class="item" href="<?php echo base_url("halamanawalpengguna");?>">Beranda</a>
                     <a class="item" href="<?php echo base_url("adopsi");?>">Adopsi Hewan</a>
                     <a class="item" href="<?php echo base_url("penampunganhewan");?>">Penampungan Hewan</a>
                     <a class="item" href="<?php echo base_url("relawan");?>">Relawan</a>
@@ -294,16 +294,16 @@
                             <span class="text">Akun</span>
                             <div class="menu">
                                 <a href="<?php echo base_url("akunpengguna");?>">
+                                <?php foreach ($user as $u) {?>
                                     <div style="width:250px;padding:20px">
                                         <img class="ui circular centered image" src="assets/image/catadopt.jpg"
                                             style="border:5px solid #cd8b62;padding:3px;width:100px;height:100px;object-fit:cover">
-                                        <div style="font-size:18px;text-align:center;margin-top:15px;color:black">Eka
-                                            Iqbal
-                                            Virgiawan
+                                        <div style="font-size:18px;text-align:center;margin-top:15px;color:black"><?php echo $u->username?>
                                         </div>
                                         <div style="font-weight:100;margin-top:10px;text-align:center;color:#4d4d4d">
-                                            ekaiqbalvirgiawan@gmail.com</div>
+                                        <?php echo $u->email?></div>
                                     </div>
+                                <?php }?>
                                 </a>
                                 <div class="divider"></div>
                                 <div class="header" style="font-size:14px">
@@ -326,8 +326,9 @@
                                     Donasi
                                 </a>
                                 <button class="ui fluid brown button" style="margin-top:10px">
+                                <a href=<?php echo base_url("keluar");?>>
                                     <i class="sign-out icon"></i>
-                                    Keluar
+                                    Keluar</a>
                                 </button>
                             </div>
                         </div>
