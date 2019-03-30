@@ -21,7 +21,7 @@ if ($statuslogin == "login"){
             </div>
             <label for="unggah_gambar" class="ui large label" style="cursor:pointer">
                 <i class="cloud upload icon"></i>
-                Unggah Foto
+                Pilih Foto
             </label>
             <input type="file" id="unggah_gambar" name="photo" onchange="previewImage();" style="display: none" required="">
         </div>

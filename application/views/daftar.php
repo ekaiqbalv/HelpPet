@@ -22,6 +22,16 @@
             $('.menu .item')
                 .tab();
         });
+    //Tampilkan gambar yang dipilih
+    function previewImage() {
+        document.getElementById("image-preview").style.display = "block";
+        var oFReader = new FileReader();
+        oFReader.readAsDataURL(document.getElementById("unggah_gambar").files[0]);
+
+        oFReader.onload = function(oFREvent) {
+            document.getElementById("image-preview").src = oFREvent.target.result;
+        };
+    };
     </script>
 </head>
 
@@ -61,12 +71,32 @@
 
                                 <!-- Form untuk pendaftaran user -->
                                 <div class="ui tab active" data-tab="pengguna">
-                                    <form class="ui form" action="<?php echo base_url('Daftar/userBaru');?>" method="post" style="padding:5px 40px 40px 40px">
+                                    <form class="ui form" action="<?php echo base_url('Daftar/userBaru');?>"
+                                        method="post" style="padding:5px 40px 40px 40px">
                                         <div class="ui segment" style="padding:30px">
+                                            <!-- Upload Foto  Hewan JS -->
+                                            <!-- <div class="ui container fluid">
+                                                <div style="font-size:18px"><b>Foto Profil</b></div>
+                                                <img class="ui small centered image" id="image-preview" style="margin-top:10px">
+                                                <label for="unggah_gambar" class="ui label"
+                                                    style="cursor:pointer;margin-top:5px;margin-bottom:15px">
+                                                    <i class="cloud upload icon"></i>
+                                                    Pilih Foto
+                                                </label>
+                                                <input type="file" id="unggah_gambar" onchange="previewImage();"
+                                                    style="display: none">
+                                            </div> -->
+                                            <!-- Akhir Upload Foto  Hewan -->
+                                            <!-- Pake yg non js dulu aja -->
+                                            <div class="ui container fluid">
+                                                <div style="font-size:18px"><b>Foto Profil</b></div>
+                                                <input type="file">
+                                            </div>
                                             <div class="field" style="margin-top:8px">
                                                 <div class="ui left icon input">
                                                     <i class="user icon"></i>
-                                                    <input type="text" maxlength="20" name="nama" placeholder="Nama Lengkap">
+                                                    <input type="text" maxlength="20" name="nama"
+                                                        placeholder="Nama Lengkap">
                                                 </div>
                                             </div>
                                             <div class="field" style="margin-top:20px">
@@ -109,8 +139,27 @@
 
                                 <!-- Form untuk pendaftaran penampungan hewan -->
                                 <div class="ui tab" data-tab="penampunganhewan">
-                                    <form class="ui form" action="<?php echo base_url('Daftar/userPenampungan');?>" method="post" style="padding:5px 40px 40px 40px">
+                                    <form class="ui form" action="<?php echo base_url('Daftar/userPenampungan');?>"
+                                        method="post" style="padding:5px 40px 40px 40px">
                                         <div class="ui segment" style="padding:30px">
+                                            <!-- Upload Foto  Hewan JS-->
+                                            <!-- <div class="ui container fluid">
+                                                <div style="font-size:18px"><b>Foto Profil</b></div>
+                                                <img class="ui small centered image" id="image-preview" style="margin-top:10px">
+                                                <label for="unggah_gambar" class="ui label"
+                                                    style="cursor:pointer;margin-top:5px;margin-bottom:15px">
+                                                    <i class="cloud upload icon"></i>
+                                                    Pilih Foto
+                                                </label>
+                                                <input type="file" id="unggah_gambar" onchange="previewImage();"
+                                                    style="display: none">
+                                            </div> -->
+                                            <!-- Akhir Upload Foto  Hewan -->
+                                            <!-- Pake yg non js dulu aja -->
+                                            <div class="ui container fluid">
+                                                <div style="font-size:18px"><b>Foto Profil</b></div>
+                                                <input type="file">
+                                            </div>
                                             <div class="field" style="margin-top:8px">
                                                 <div class="ui left icon input">
                                                     <i class="user icon"></i>
@@ -141,7 +190,7 @@
                                             </div>
                                             <div class="field" style="margin-top:20px">
                                                 <div class="ui left icon input">
-                                                <i class="map marker alternate icon"></i>
+                                                    <i class="map marker alternate icon"></i>
                                                     <input type="text" name="domisiliPenampungan"
                                                         placeholder="Domisili Tempat Penampungan">
                                                 </div>

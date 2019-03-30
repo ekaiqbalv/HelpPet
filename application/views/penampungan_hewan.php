@@ -39,7 +39,7 @@ if ($statuslogin == "login"){
         <div class="card">
             <div class="image" style="margin:15px">
                 <img src="assets/image/profilpenampungan.jpg">
-                // src nya diganti sm echo u foto
+                <!-- // src nya diganti sm echo u foto -->
             </div>
             <div class="content">
                 <div class="header"><?php echo $u->nm_penampungan?></div>
