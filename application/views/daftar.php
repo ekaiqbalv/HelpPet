@@ -109,7 +109,7 @@
 
                                 <!-- Form untuk pendaftaran penampungan hewan -->
                                 <div class="ui tab" data-tab="penampunganhewan">
-                                    <form class="ui form" style="padding:5px 40px 40px 40px">
+                                    <form class="ui form" action="<?php echo base_url('Daftar/userPenampungan');?>" method="post" style="padding:5px 40px 40px 40px">
                                         <div class="ui segment" style="padding:30px">
                                             <div class="field" style="margin-top:8px">
                                                 <div class="ui left icon input">
@@ -146,11 +146,11 @@
                                                         placeholder="Kata Sandi">
                                                 </div>
                                             </div>
-                                            <div class="ui fluid large button brown"
+                                            <button class="ui fluid large button brown"
                                                 style="margin-top:15px;margin-bottom:20px;background-color:#cd8b62"
                                                 onclick="$('.ui.dimmable .dimmer').dimmer('show')">
                                                 Daftar
-                                            </div>
+                                            </button>
                                             <div style="font-size:15px">Sudah punya akun HelpPet?
                                                 <a href="<?php echo base_url("masuk");?>" style="color:brown">
                                                     Masuk

@@ -20,8 +20,8 @@ class Daftar extends CI_Controller {
 	 */
 	function __construct(){
 		parent::__construct();
-
 		$this->load->model('m_user');
+		$this->load->model('m_userPenampungan');
 
 	}
 	 public function index()
@@ -46,6 +46,26 @@ class Daftar extends CI_Controller {
 			);
 
 		$this->m_user->insertUser($data);
+		redirect(base_url('Masuk'));
+	}
+
+	public function userPenampungan()
+	{
+		$nama = $this->input->post('namaPenampungan');
+		$email = $this->input->post('emailPenampungan');
+		$nomortelp = $this->input->post('nomortelpPenampungan');
+		$alamat = $this->input->post('alamatPenampungan');
+		$katasandi = $this->input->post('katasandiPenampungan');
+
+		$data = array(
+			'nm_penampungan' => $nama,
+			'email' => $email, 
+			'password' => $katasandi ,
+			'telp' => $nomortelp,
+			'alamat' => $alamat
+		);
+
+		$this->m_userPenampungan->insertUserPenampungan($data);
 		redirect(base_url('Masuk'));
 	}
 }
