@@ -23,33 +23,90 @@
                 .tab();
         });
     //Tampilkan gambar yang dipilih
-    function previewImage() {
-        document.getElementById("image-preview").style.display = "block";
+    function previewImage(preview, unggah) {
+        document.getElementById(preview).style.display = "block";
         var oFReader = new FileReader();
-        oFReader.readAsDataURL(document.getElementById("unggah_gambar").files[0]);
+        oFReader.readAsDataURL(document.getElementById(unggah).files[0]);
 
         oFReader.onload = function(oFREvent) {
-            document.getElementById("image-preview").src = oFREvent.target.result;
+            document.getElementById(preview).src = oFREvent.target.result;
         };
     };
+    </script>
+    <script>
+    $(document)
+        .ready(function() {
+            $('.ui.form')
+                .form({
+                    fields: {
+                        email: {
+                            identifier: 'email',
+                            rules: [{
+                                    type: 'empty',
+                                    prompt: 'Alamat email tidak boleh kosong'
+                                },
+                                {
+                                    type: 'email',
+                                    prompt: 'Harap masukan email anda yang benar'
+                                }
+                            ]
+                        },
+                        emailPenampungan: {
+                            identifier: 'emailPenampungan',
+                            rules: [{
+                                    type: 'empty',
+                                    prompt: 'Alamat email tidak boleh kosong'
+                                },
+                                {
+                                    type: 'email',
+                                    prompt: 'Harap masukan email anda yang benar'
+                                }
+                            ]
+                        },
+                        password: {
+                            identifier: 'katasandi',
+                            rules: [{
+                                    type: 'empty',
+                                    prompt: 'Kata sandi tidak boleh kosong'
+                                },
+                                {
+                                    type: 'length[6]',
+                                    prompt: 'Kata sandi yang anda masukan minimal harus 6 karakter'
+                                }
+                            ]
+                        },
+                        passwordPenampungan: {
+                            identifier: 'katasandiPenampungan',
+                            rules: [{
+                                    type: 'empty',
+                                    prompt: 'Kata sandi tidak boleh kosong'
+                                },
+                                {
+                                    type: 'length[6]',
+                                    prompt: 'Kata sandi yang anda masukan minimal harus 6 karakter'
+                                }
+                            ]
+                        }
+                    }
+                });
+        });
     </script>
 </head>
 
 <body class="ui dimmable">
-    <div class="ui container fluid"
-        style="position:absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%)">
+    <div class="ui container fluid" style="margin-top:25px;line-height:1.5">
         <div class="ui container center aligned">
             <a href="<?php echo base_url("");?>"><img class="ui small centered image"
-                    src="assets/image/HELPPET-DARK.png" style="margin-bottom:10px"></a>
+                    src="assets/image/HELPPET-DARK.png" style="margin-bottom:30px"></a>
             <div class="ui two column stackable grid">
                 <div class="row">
-                    <div class="column middle aligned">
+                    <div class="column" style="margin-top:120px">
                         <div class="ui three row stackable grid">
                             <div class="column" style="margin:10px">
-                                <div class="row" style="margin-bottom:5px;font-size:28px">
+                                <div class="row" style="font-size:28px">
                                     Halo #ParaPecintaHewan!
                                 </div>
-                                <div class="row" style="margin-top:10px;margin-bottom:10px;font-size:20px">
+                                <div class="row" style="margin-bottom:10px;font-size:20px">
                                     Mari bergabung bersama HelpPet
                                 </div>
                                 <div class="row"><img src="assets/image/pet.png"
@@ -58,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column" style="padding-right:80px">
+                    <div class="column" style="padding-right:60px">
                         <div class="ui container">
                             <div class="ui container">
                                 <div style="margin-top:20px">
@@ -68,35 +125,39 @@
                                     <a class="active item" data-tab="pengguna">Pengguna</a>
                                     <a class="item" data-tab="penampunganhewan">Penampungan Hewan</a>
                                 </div>
-
                                 <!-- Form untuk pendaftaran user -->
                                 <div class="ui tab active" data-tab="pengguna">
                                     <form class="ui form" action="<?php echo base_url('Daftar/userBaru');?>"
-                                        method="post" style="padding:5px 40px 40px 40px">
+                                        method="post" style="padding:5px 40px 5px 40px">
+                                        <!-- Pesan error -->
+                                        <div class="ui error message">
+                                            <ul class="list">
+                                                <li>Alamat email tidak boleh kosong</li>
+                                                <li>Harap masukan email anda yang benar</li>
+                                                <li>Kata sandi tidak boleh kosong</li>
+                                                <li>Kata sandi yang anda masukan minimal harus 6 karakter</li>
+                                            </ul>
+                                        </div>
                                         <div class="ui segment" style="padding:30px">
                                             <!-- Upload Foto  Hewan JS -->
-                                            <!-- <div class="ui container fluid">
+                                            <div class="ui container fluid">
                                                 <div style="font-size:18px"><b>Foto Profil</b></div>
-                                                <img class="ui small centered image" id="image-preview" style="margin-top:10px">
-                                                <label for="unggah_gambar" class="ui label"
+                                                <img class="ui small centered image" id="image-preview1"
+                                                    style="margin-top:10px">
+                                                <label for="unggah_gambar1" class="ui label"
                                                     style="cursor:pointer;margin-top:5px;margin-bottom:15px">
                                                     <i class="cloud upload icon"></i>
                                                     Pilih Foto
                                                 </label>
-                                                <input type="file" id="unggah_gambar" onchange="previewImage();"
+                                                <input type="file" id="unggah_gambar1"
+                                                    onchange="previewImage('image-preview1','unggah_gambar1')"
                                                     style="display: none">
-                                            </div> -->
-                                            <!-- Akhir Upload Foto  Hewan -->
-                                            <!-- Pake yg non js dulu aja -->
-                                            <div class="ui container fluid">
-                                                <div style="font-size:18px"><b>Foto Profil</b></div>
-                                                <input type="file">
                                             </div>
+                                            <!-- Akhir Upload Foto  Hewan -->
                                             <div class="field" style="margin-top:8px">
                                                 <div class="ui left icon input">
                                                     <i class="user icon"></i>
-                                                    <input type="text" maxlength="20" name="nama"
-                                                        placeholder="Nama Lengkap">
+                                                    <input type="text" maxlength="20" name="nama" placeholder="Nama Lengkap">
                                                 </div>
                                             </div>
                                             <div class="field" style="margin-top:20px">
@@ -114,8 +175,7 @@
                                             <div class="field" style="margin-top:20px">
                                                 <div class="ui left icon input">
                                                     <i class="home icon"></i>
-                                                    <input type="text" name="alamat"
-                                                        placeholder="Alamat Tempat Tinggal">
+                                                    <input type="text" name="alamat" placeholder="Alamat Tempat Tinggal">
                                                 </div>
                                             </div>
                                             <div class="field">
@@ -125,8 +185,7 @@
                                                 </div>
                                             </div>
                                             <button class="ui fluid large button brown"
-                                                style="margin-top:15px;margin-bottom:20px;background-color:#cd8b62"
-                                                onclick="$('.ui.dimmable .dimmer').dimmer('show')">
+                                                style="margin-top:15px;margin-bottom:20px;background-color:#cd8b62">
                                                 Daftar
                                             </button>
                                             <div style="font-size:15px">Sudah punya akun HelpPet?<a
@@ -140,26 +199,32 @@
                                 <!-- Form untuk pendaftaran penampungan hewan -->
                                 <div class="ui tab" data-tab="penampunganhewan">
                                     <form class="ui form" action="<?php echo base_url('Daftar/userPenampungan');?>"
-                                        method="post" style="padding:5px 40px 40px 40px">
+                                        method="post" style="padding:5px 40px 5px 40px">
+                                        <!-- Pesan error -->
+                                        <div class="ui error message">
+                                            <ul class="list">
+                                                <li>Alamat email tidak boleh kosong</li>
+                                                <li>Harap masukan email anda yang benar</li>
+                                                <li>Kata sandi tidak boleh kosong</li>
+                                                <li>Kata sandi yang anda masukan minimal harus 6 karakter</li>
+                                            </ul>
+                                        </div>
                                         <div class="ui segment" style="padding:30px">
-                                            <!-- Upload Foto  Hewan JS-->
-                                            <!-- <div class="ui container fluid">
+                                            <!-- Upload Foto Hewan JS-->
+                                            <div class="ui container fluid">
                                                 <div style="font-size:18px"><b>Foto Profil</b></div>
-                                                <img class="ui small centered image" id="image-preview" style="margin-top:10px">
-                                                <label for="unggah_gambar" class="ui label"
+                                                <img class="ui small centered image" id="image-preview2"
+                                                    style="margin-top:10px">
+                                                <label for="unggah_gambar2" class="ui label"
                                                     style="cursor:pointer;margin-top:5px;margin-bottom:15px">
                                                     <i class="cloud upload icon"></i>
                                                     Pilih Foto
                                                 </label>
-                                                <input type="file" id="unggah_gambar" onchange="previewImage();"
+                                                <input type="file" id="unggah_gambar2"
+                                                    onchange="previewImage('image-preview2','unggah_gambar2')"
                                                     style="display: none">
-                                            </div> -->
-                                            <!-- Akhir Upload Foto  Hewan -->
-                                            <!-- Pake yg non js dulu aja -->
-                                            <div class="ui container fluid">
-                                                <div style="font-size:18px"><b>Foto Profil</b></div>
-                                                <input type="file">
                                             </div>
+                                            <!-- Akhir Upload Foto  Hewan -->
                                             <div class="field" style="margin-top:8px">
                                                 <div class="ui left icon input">
                                                     <i class="user icon"></i>
@@ -203,8 +268,7 @@
                                                 </div>
                                             </div>
                                             <button class="ui fluid large button brown"
-                                                style="margin-top:15px;margin-bottom:20px;background-color:#cd8b62"
-                                                onclick="$('.ui.dimmable .dimmer').dimmer('show')">
+                                                style="margin-top:15px;margin-bottom:20px;background-color:#cd8b62">
                                                 Daftar
                                             </button>
                                             <div style="font-size:15px">Sudah punya akun HelpPet?

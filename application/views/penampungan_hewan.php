@@ -35,6 +35,128 @@ if ($statuslogin == "login"){
 <div class="ui container" style="margin-top:30px">
     <!-- Daftar hewan -->
     <div class="ui four doubling link cards">
+        <div class="card">
+            <div class="image" style="margin:15px">
+                <img src="assets/image/profilpenampungan.jpg">
+            </div>
+            <div class="content">
+                <div class="header">Kelompok Pet Animal</div>
+                <div class="meta">
+                    <div style="display:flex;flex-direction:row">
+                        <i class="map marker alternate icon"></i>
+                        <div>Malang</div>
+                    </div>
+                </div>
+                <div class="description">
+                    Penampungan hewan ini didirikan pada tahun 2010
+                </div>
+            </div>
+            <div class="extra content center aligned">
+                <a href="<?php echo base_url("profilpenampunganhewan");?>">
+                    <button class="ui button brown fluid">Kunjungi Profil</button>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image" style="margin:15px">
+                <img src="assets/image/shelter2.jpg">
+            </div>
+            <div class="content">
+                <div class="header">Garda Satwa Indonesia</div>
+                <div class="meta">
+                    <div style="display:flex;flex-direction:row">
+                        <i class="map marker alternate icon"></i>
+                        <div>Jakarta</div>
+                    </div>
+                </div>
+                <div class="description">
+                    Penampungan hewan ini didirikan pada tahun 2006
+                </div>
+            </div>
+            <div class="extra content center aligned">
+                <button class="ui button brown fluid">Kunjungi Profil</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image" style="margin:15px">
+                <img src="assets/image/shelter3.jpg">
+            </div>
+            <div class="content">
+                <div class="header">Rumah Kucing Bandung</div>
+                <div class="meta">
+                    <div style="display:flex;flex-direction:row">
+                        <i class="map marker alternate icon"></i>
+                        <div>Bandung</div>
+                    </div>
+                </div>
+                <div class="description">
+                    Penampungan hewan ini didirikan pada tahun 2013
+                </div>
+            </div>
+            <div class="extra content center aligned">
+                <button class="ui button brown fluid">Kunjungi Profil</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image" style="margin:15px">
+                <img src="assets/image/shelter1.jpg">
+            </div>
+            <div class="content">
+                <div class="header">Nawak Nawek</div>
+                <div class="meta">
+                    <div style="display:flex;flex-direction:row">
+                        <i class="map marker alternate icon"></i>
+                        <div>Malang</div>
+                    </div>
+                </div>
+                <div class="description">
+                    Penampungan hewan ini didirikan pada tahun 2015
+                </div>
+            </div>
+            <div class="extra content center aligned">
+                <button class="ui button brown fluid">Kunjungi Profil</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image" style="margin:15px">
+                <img src="assets/image/shelter7.png">
+            </div>
+            <div class="content">
+                <div class="header">Bandung Dog Guardian</div>
+                <div class="meta">
+                    <div style="display:flex;flex-direction:row">
+                        <i class="map marker alternate icon"></i>
+                        <div>Bandung</div>
+                    </div>
+                </div>
+                <div class="description">
+                    Penampungan hewan ini didirikan pada tahun 2011
+                </div>
+            </div>
+            <div class="extra content center aligned">
+                <button class="ui button brown fluid">Kunjungi Profil</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image" style="margin:15px">
+                <img src="assets/image/shelter8.png">
+            </div>
+            <div class="content">
+                <div class="header">Komunitas Penyelamat Kucing Terlantar Surabaya</div>
+                <div class="meta">
+                    <div style="display:flex;flex-direction:row">
+                        <i class="map marker alternate icon"></i>
+                        <div>Surabaya</div>
+                    </div>
+                </div>
+                <div class="description">
+                    Penampungan hewan ini didirikan pada tahun 2016
+                </div>
+            </div>
+            <div class="extra content center aligned">
+                <button class="ui button brown fluid">Kunjungi Profil</button>
+            </div>
+        </div>
         <?php foreach ($penampungan as $u){?>
         <div class="card">
             <div class="image" style="margin:15px">
@@ -50,7 +172,7 @@ if ($statuslogin == "login"){
                     </div>
                 </div>
                 <div class="description">
-                <?php echo $u->email?>
+                    <?php echo $u->email?>
                 </div>
             </div>
             <div class="extra content center aligned">
@@ -60,7 +182,6 @@ if ($statuslogin == "login"){
             </div>
         </div>
         <?php }?>
-        
     </div>
     <!-- Akhir Daftar Hewan -->
 </div>
@@ -121,7 +242,8 @@ if ($statuslogin == "login"){
                 <div class="content" style="padding:30px 30px 20px 30px">
                     <div class="description" style="font-size:16px;line-height:1.7">
                         Selain memberikan bantuan berupa materi, anda juga bisa memberikan bantuan berupa waktu yang
-                        dapat anda luangkan untuk menjadi seorang relawan. Kami mempunyai beberapa pilihan untuk menjadi seorang relawan dan tentunya sesuai dengan anda.
+                        dapat anda luangkan untuk menjadi seorang relawan. Kami mempunyai beberapa pilihan untuk menjadi
+                        seorang relawan dan tentunya sesuai dengan anda.
                     </div>
                 </div>
                 <div class="extra content">

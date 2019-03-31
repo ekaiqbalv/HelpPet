@@ -32,7 +32,7 @@ $this->load->view('navigasiloginuser');
                         Donasi
                     </a>
                     <a class="item" data-tab="saldo">
-                        Saldo
+                        Dana
                     </a>
                 </div>
                 <div class="ui divider" style="margin-top:20px"></div>
@@ -56,7 +56,7 @@ $this->load->view('navigasiloginuser');
                     </div>
                     <div style="margin-top:30px">
                         <label style="font-size:22px"><b>Nomor Telepon</b></label>
-                        <div style="font-size:18px;margin-top:10px">02183382586</div>
+                        <div style="font-size:18px;margin-top:10px">0822654321</div>
                     </div>
                     <div style="margin-top:30px">
                         <label style="font-size:22px"><b>Alamat</b></label>
@@ -306,6 +306,21 @@ $this->load->view('navigasiloginuser');
                                     Kelompok Pet Animal
                                 </span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:30px;padding:20px 40px 20px 40px;border-radius:5px;background-color:#F7EFD2">
+                    <div class="ui grid">
+                        <div class="one wide column middle aligned">
+                            <i class="info circle big brown icon"></i>
+                        </div>
+                        <div class="fifteen wide column" style="font-size:15px;line-height:1.5">
+                            HelpPet akan mengenakan biaya administrasi senilai 5% dari biaya adopsi yang anda tentukan.
+                            Biaya ini akan kami tambahkan langsung pada biaya adopsi hewan anda. Biaya administrasi yang
+                            kami kenakan ini akan digunakan untuk menutup biaya operasional serta melakukan pengembangan
+                            platform HelpPet ini agar dapat memberikan pelayanan yang lebih maksimal, serta kemudahan
+                            bagi para pecinta hewan dalam menggunakan fitur yang tersedia pada HelpPet seperti Adopsi,
+                            Relawan, dan Donasi.
                         </div>
                     </div>
                 </div>
@@ -608,6 +623,136 @@ $this->load->view('navigasiloginuser');
                     <b style="line-height:1.5">Informasi Donasi</b>
                 </div>
                 <div
+                    style="margin-top:20px;background-color:#f7efd2;border:5px solid #ebc589;border-radius:5px;color:#4d4d4d">
+                    <div class="ui borderless inverted huge stackable menu"
+                        style="background-color:#ebc589;border-radius:0px">
+                        <a class="active item" data-tab="riwayat-donasi" style="font-size:17px;color:white"><b>Riwayat
+                                Donasi</b></a>
+                        <a class="item" data-tab="laporan-donasi" style="font-size:17px;color:white"><b>Laporan
+                                Donasi</b></a>
+                    </div>
+                    <div class="ui active tab" data-tab="riwayat-donasi" style="padding:20px 20px 30px 20px">
+                        <div style="font-size:22px;margin-bottom:10px"><b>Total Donasi Yang Anda Dapatkan</b></div>
+                        <div class="ui grid stackable" style="margin-left:25px;margin-right:25px">
+                            <div class="two wide column center aligned">
+                                <i class="money bill alternate outline huge green icon"></i>
+                            </div>
+                            <div class="fourteen wide column middle aligned">
+                                <div style="display:flex;flex-direction:row">
+                                    <div style="font-size:28px"><b>Rp</b></div>
+                                    <div style="font-size:28px;margin-left:10px"><b>1.140.000</b></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top:20px;font-size:19px;font-weight:500">Berikut riwayat donasi yang anda
+                            dapatkan
+                            :</div>
+                        <table class="ui striped stackable sortable celled yellow table center aligned"
+                            style="margin-top:15px">
+                            <thead>
+                                <tr>
+                                    <th>Tanggal Donasi</th>
+                                    <th>Nama Donatur</th>
+                                    <th>Nominal Donasi (Rp)</th>
+                                    <th>Biaya Admin (Rp)</th>
+                                    <th>Donasi Bersih (Rp)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>31 Mar 2019 08:22</td>
+                                    <td>Eka Iqbal Virgiawan</td>
+                                    <td>400.000</td>
+                                    <td>20.000</td>
+                                    <td>380.000</td>
+                                </tr>
+                                <tr>
+                                    <td>29 Mar 2019 14:45</td>
+                                    <td>Albar</td>
+                                    <td>250.000</td>
+                                    <td>12.500</td>
+                                    <td>237.500</td>
+                                </tr>
+                                <tr>
+                                    <td>28 Mar 2019 10:18</td>
+                                    <td>Rian</td>
+                                    <td>150.000</td>
+                                    <td>7.500</td>
+                                    <td>142.500</td>
+                                </tr>
+                                <tr>
+                                    <td>26 Mar 2019 08:22</td>
+                                    <td>Nanta</td>
+                                    <td>300.000</td>
+                                    <td>15.000</td>
+                                    <td>285.000</td>
+                                </tr>
+                                <tr>
+                                    <td>25 Mar 2019 06:44</td>
+                                    <td>Dani</td>
+                                    <td>100.000</td>
+                                    <td>5.000</td>
+                                    <td>95.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ui tab" data-tab="laporan-donasi" style="padding:25px 50px 40px 50px">
+                        <form class="ui form" method="post">
+                            <!-- <div class="field">
+                                <label style="font-size:18px">Nama Bank Tujuan</label>
+                                <div class="ui selection dropdown">
+                                    <input type="hidden" name="jeniskelaminhewan">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Pilih Bank</div>
+                                    <div class="menu">
+                                        <div class="item">BCA</div>
+                                        <div class="item">BRI</div>
+                                        <div class="item">BNI</div>
+                                        <div class="item">CIMB</div>
+                                        <div class="item">Mandiri</div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="field">
+                                <label style="font-size:18px">Laporan Bulan</label>
+                                <div class="ui right labeled fluid input">
+                                    <input type="month" name="laporan" placeholder="Masukkan Bulan">
+                                </div>
+                            </div>
+                            <!-- <div class="field"> -->
+                            <div style="font-size:18px"><b>Pilih File Laporan Donasi</b></div>
+                            <label for="file-upload" class="ui large brown label" style="cursor:pointer;margin-top:5px">
+                                <i class="cloud upload icon"></i>
+                                Pilih File
+                            </label>
+                            <input type="file" id="file-upload" onchange="previewFile()" style="display: none">
+                            <div id="file-upload-filename"></div>
+                            <!-- <input type="file" id="file-upload" multiple required />
+                                <label for="file-upload">Upload file</label>
+                                <div id="file-upload-filename"></div>
+                                <label style="font-size:18px">Pilih File Laporan</label>
+                                <input type="file" name="pilihfile" placeholder="Masukkan Nomor Rekening"> -->
+                            <!-- </div> -->
+                            <!-- <div class="field">
+                                <label style="font-size:18px">Nomor Rekening</label>
+                                <input type="text" name="warnahewan" placeholder="Masukkan Nomor Rekening">
+                            </div>
+                            <div class="field">
+                                <label style="font-size:18px">Jumlah Penarikan Saldo</label>
+                                <div class="ui labeled fluid input">
+                                    <label class="ui label" style="background-color:#cd8b62;color:white">Rp</label>
+                                    <input type="number" name="biayaadopsi" placeholder="Masukan Nominal Penarikan">
+                                </div>
+                            </div> -->
+                        </form>
+                        <div class="ui container fluid" style="text-align:right">
+                            <button class="ui large button brown" style="margin-top:20px"
+                                onclick="$('.ui.tiny.modal.penarikan').modal('show')">Unggah</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div
                     style="margin-top:20px;background-color:#f7efd2;border:5px solid #ebc589;border-radius:5px;padding:30px 20px 35px 20px;color:#4d4d4d">
                     <div style="font-size:22px;margin-bottom:10px"><b>Total Donasi Yang Anda Dapatkan</b></div>
                     <div class="ui grid stackable" style="margin-left:25px;margin-right:25px">
@@ -673,7 +818,7 @@ $this->load->view('navigasiloginuser');
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
                 <div style="margin-top:30px;padding:20px 40px 20px 40px;border-radius:5px;background-color:#F7EFD2">
                     <div class="ui grid">
                         <div class="one wide column middle aligned">
@@ -692,19 +837,19 @@ $this->load->view('navigasiloginuser');
             <div class="ui tab" data-tab="saldo">
                 <div
                     style="font-size:32px;color:white;text-align:center;background-color:#cd8b62;border-top-left-radius:5px;border-top-right-radius:5px;padding:20px">
-                    <b style="line-height:1.5">Informasi Saldo</b>
+                    <b style="line-height:1.5">Informasi Dana</b>
                 </div>
                 <div
                     style="margin-top:20px;background-color:#f7efd2;border:5px solid #ebc589;border-radius:5px;color:#4d4d4d">
                     <div class="ui borderless inverted huge stackable menu"
                         style="background-color:#ebc589;border-radius:0px">
                         <a class="active item" data-tab="riwayat-saldo" style="font-size:17px;color:white"><b>Riwayat
-                                Saldo</b></a>
+                                Dana</b></a>
                         <a class="item" data-tab="penarikan-saldo" style="font-size:17px;color:white"><b>Penarikan
-                                Saldo</b></a>
+                                Dana</b></a>
                     </div>
                     <div class="ui active tab" data-tab="riwayat-saldo" style="padding:20px 20px 30px 20px">
-                        <div style="font-size:22px;margin-bottom:10px"><b>Saldo Anda Saat Ini</b></div>
+                        <div style="font-size:22px;margin-bottom:10px"><b>Dana Anda Saat Ini</b></div>
                         <div class="ui grid stackable" style="margin-left:25px;margin-right:25px">
                             <div class="two wide column center aligned">
                                 <i class="money bill alternate outline huge green icon"></i>
@@ -716,12 +861,12 @@ $this->load->view('navigasiloginuser');
                                 </div>
                             </div>
                         </div>
-                        <div style="margin-top:20px;font-size:19px;font-weight:500">Berikut riwayat saldo anda :</div>
+                        <div style="margin-top:20px;font-size:19px;font-weight:500">Berikut riwayat dana anda :</div>
                         <table class="ui striped stackable sortable celled yellow table center aligned">
                             <thead>
                                 <tr>
                                     <th>Waktu</th>
-                                    <th>Nominal Saldo (Rp)</th>
+                                    <th>Nominal Dana (Rp)</th>
                                     <th>Deskripsi</th>
                                     <th>Status</th>
                                 </tr>
@@ -812,7 +957,7 @@ $this->load->view('navigasiloginuser');
                                 <input type="text" name="warnahewan" placeholder="Masukkan Nomor Rekening">
                             </div>
                             <div class="field">
-                                <label style="font-size:18px">Jumlah Penarikan Saldo</label>
+                                <label style="font-size:18px">Jumlah Penarikan Dana</label>
                                 <div class="ui labeled fluid input">
                                     <label class="ui label" style="background-color:#cd8b62;color:white">Rp</label>
                                     <input type="number" name="biayaadopsi" placeholder="Masukan Nominal Penarikan">
@@ -908,9 +1053,9 @@ $this->load->view('navigasiloginuser');
     </div>
     <div class="content">
         <p style="font-size:18px;line-height:1.5">
-            Permintaan penarikan saldo berhasil, saldo akan diproses dalam waktu <b>1x24 jam hari kerja bank</b> (tidak
+            Permintaan penarikan dana berhasil, dana akan diproses dalam waktu <b>1x24 jam hari kerja bank</b> (tidak
             termasuk hari
-            Sabtu/Minggu/Libur). Anda akan menerima email konfirmasi ketika saldo sudah kami transfer.
+            Sabtu/Minggu/Libur). Anda akan menerima email konfirmasi ketika dana sudah kami transfer.
         </p>
     </div>
     <div class="actions">

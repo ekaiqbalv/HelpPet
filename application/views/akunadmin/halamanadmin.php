@@ -26,7 +26,7 @@ $this->load->view('navigasiloginuser');
                         Konfirmasi Pembayaran
                     </a>
                     <a class="item" data-tab="penarikan">
-                        Konfirmasi Penarikan Saldo
+                        Konfirmasi Penarikan Dana
                     </a>
                 </div>
                 <div class="ui divider" style="margin-top:20px"></div>
@@ -477,7 +477,7 @@ $this->load->view('navigasiloginuser');
             <div class="ui tab" data-tab="penarikan">
                 <div
                     style="font-size:32px;color:white;text-align:center;background-color:#cd8b62;border-top-left-radius:5px;border-top-right-radius:5px;padding:20px">
-                    <b style="line-height:1.5">Daftar Permintaan Penarikan Saldo</b>
+                    <b style="line-height:1.5">Daftar Permintaan Penarikan Dana</b>
                 </div>
                 <div
                     style="margin-top:20px;background-color:#f7efd2;border:5px solid #ebc589;border-radius:5px;padding:30px 20px 35px 20px;color:#4d4d4d">

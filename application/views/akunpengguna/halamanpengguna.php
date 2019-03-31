@@ -32,7 +32,7 @@ $this->load->view('navigasiloginuser');
                         Donasi
                     </a>
                     <a class="item" data-tab="saldo">
-                        Saldo
+                        Dana
                     </a>
                 </div>
                 <div class="ui divider" style="margin-top:20px"></div>
@@ -132,6 +132,21 @@ $this->load->view('navigasiloginuser');
                                     Eka Iqbal Virgiawan
                                 </span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:30px;padding:20px 40px 20px 40px;border-radius:5px;background-color:#F7EFD2">
+                    <div class="ui grid">
+                        <div class="one wide column middle aligned">
+                            <i class="info circle big brown icon"></i>
+                        </div>
+                        <div class="fifteen wide column" style="font-size:15px;line-height:1.5">
+                            HelpPet akan mengenakan biaya administrasi senilai 5% dari biaya adopsi yang anda tentukan.
+                            Biaya ini akan kami tambahkan langsung pada biaya adopsi hewan anda. Biaya administrasi yang
+                            kami kenakan ini akan digunakan untuk menutup biaya operasional serta melakukan pengembangan
+                            platform HelpPet ini agar dapat memberikan pelayanan yang lebih maksimal, serta kemudahan
+                            bagi para pecinta hewan dalam menggunakan fitur yang tersedia pada HelpPet seperti Adopsi,
+                            Relawan, dan Donasi.
                         </div>
                     </div>
                 </div>
@@ -465,19 +480,19 @@ $this->load->view('navigasiloginuser');
             <div class="ui tab" data-tab="saldo">
                 <div
                     style="font-size:32px;color:white;text-align:center;background-color:#cd8b62;border-top-left-radius:5px;border-top-right-radius:5px;padding:20px">
-                    <b style="line-height:1.5">Informasi Saldo</b>
+                    <b style="line-height:1.5">Informasi Dana</b>
                 </div>
                 <div
                     style="margin-top:20px;background-color:#f7efd2;border:5px solid #ebc589;border-radius:5px;color:#4d4d4d">
                     <div class="ui borderless inverted huge stackable menu"
                         style="background-color:#ebc589;border-radius:0px">
                         <a class="active item" data-tab="riwayat-saldo" style="font-size:17px;color:white"><b>Riwayat
-                                Saldo</b></a>
+                        Dana</b></a>
                         <a class="item" data-tab="penarikan-saldo" style="font-size:17px;color:white"><b>Penarikan
-                                Saldo</b></a>
+                        Dana</b></a>
                     </div>
                     <div class="ui active tab" data-tab="riwayat-saldo" style="padding:20px 20px 30px 20px">
-                        <div style="font-size:22px;margin-bottom:10px"><b>Saldo Anda Saat Ini</b></div>
+                        <div style="font-size:22px;margin-bottom:10px"><b>Dana Anda Saat Ini</b></div>
                         <div class="ui grid stackable" style="margin-left:25px;margin-right:25px">
                             <div class="two wide column center aligned">
                                 <i class="money bill alternate outline huge green icon"></i>
@@ -489,12 +504,12 @@ $this->load->view('navigasiloginuser');
                                 </div>
                             </div>
                         </div>
-                        <div style="margin-top:20px;font-size:19px;font-weight:500">Berikut riwayat saldo anda :</div>
+                        <div style="margin-top:20px;font-size:19px;font-weight:500">Berikut riwayat dana anda :</div>
                         <table class="ui striped stackable sortable celled yellow table center aligned">
                             <thead>
                                 <tr>
                                     <th>Waktu</th>
-                                    <th>Nominal Saldo (Rp)</th>
+                                    <th>Nominal Dana (Rp)</th>
                                     <th>Deskripsi</th>
                                     <th>Status</th>
                                 </tr>
@@ -555,7 +570,7 @@ $this->load->view('navigasiloginuser');
                                 <input type="text" name="warnahewan" placeholder="Masukkan Nomor Rekening">
                             </div>
                             <div class="field">
-                                <label style="font-size:18px">Jumlah Penarikan Saldo</label>
+                                <label style="font-size:18px">Jumlah Penarikan Dana</label>
                                 <div class="ui labeled fluid input">
                                     <label class="ui label" style="background-color:#cd8b62;color:white">Rp</label>
                                     <input type="number" name="biayaadopsi" placeholder="Masukan Nominal Penarikan">
@@ -632,9 +647,9 @@ $this->load->view('navigasiloginuser');
     </div>
     <div class="content">
         <p style="font-size:18px;line-height:1.5">
-            Permintaan penarikan saldo berhasil, saldo akan diproses dalam waktu <b>1x24 jam hari kerja bank</b> (tidak
+            Permintaan penarikan dana berhasil, dana akan diproses dalam waktu <b>1x24 jam hari kerja bank</b> (tidak
             termasuk hari
-            Sabtu/Minggu/Libur). Anda akan menerima email konfirmasi ketika saldo sudah kami transfer.
+            Sabtu/Minggu/Libur). Anda akan menerima email konfirmasi ketika dana sudah kami transfer.
         </p>
     </div>
     <div class="actions">

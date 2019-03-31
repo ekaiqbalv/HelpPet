@@ -6,7 +6,8 @@ if ($statuslogin == "login"){
 } else {$this->load->view('navigasi');} ?>
 
 <div class="ui container fluid">
-    <div class="ui stackable grid" style="margin:30px;background-color:#f6f6f6;border-radius: 15px;padding:30px 40px 30px 40px">
+    <div class="ui stackable grid"
+        style="margin:30px;background-color:#f6f6f6;border-radius: 15px;padding:30px 40px 30px 40px">
         <div class="eight wide column middle aligned">
             <div style="text-align:center">
                 <h1 style="font-size:30px;color:#3a3a3a">Temukan Hewan Peliharaan Yang Anda Inginkan</h1>
@@ -57,7 +58,183 @@ if ($statuslogin == "login"){
 <div class="ui container">
     <!-- Daftar hewan -->
     <div class="ui four doubling link cards">
-    <?php foreach ($postingHewan as $u) {?>
+        <div class="card" onclick="$('.ui.small.first.modal.bayar').modal('show');">
+            <div class="image">
+                <img src="assets/image/foto1.jpg" style="object-fit:cover;height:250px">
+            </div>
+            <div class="content">
+                <div class="header">Yuki</div>
+                <div class="meta">
+                    <a>Kucing</a>
+                </div>
+                <div class="description">
+                    Yuki sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
+                    yang lucunya. Yuki memiliki bulu warna coklat
+                </div>
+            </div>
+            <div class="extra content">
+                <span>
+                    <i class="home icon"></i>
+                    Kelompok Pet Animal
+                </span>
+            </div>
+        </div>
+        <div class="card" onclick="$('.ui.small.first.modal.gratis').modal('show');">
+            <div class="image">
+                <img src="assets/image/catadopt.jpg" style="object-fit:cover;height:250px">
+            </div>
+            <div class="content">
+                <div class="header">Boo</div>
+                <div class="meta">
+                    <a>Kucing</a>
+                </div>
+                <div class="description">
+                    Boo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
+                    yang lucunya. Boo memiliki bulu warna coklat
+                </div>
+            </div>
+            <div class="extra content">
+
+                <span>
+                    <i class="home icon"></i>
+                    Eka
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="assets/image/foto2.jpg" style="object-fit:cover;height:250px">
+            </div>
+            <div class="content">
+                <div class="header">Toms</div>
+                <div class="meta">
+                    <a>Anjing</a>
+                </div>
+                <div class="description">
+                    Toms sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya
+                    yang lucunya. Toms memiliki bulu warna coklat
+                </div>
+            </div>
+            <div class="extra content">
+
+                <span>
+                    <i class="home icon"></i>
+                    Nawak Nawek
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="assets/image/foto3.jpg" style="object-fit:cover;height:250px">
+            </div>
+            <div class="content">
+                <div class="header">Buster</div>
+                <div class="meta">
+                    <a>Kelinci</a>
+                </div>
+                <div class="description">
+                    Buster sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
+                    yang lucunya. Buster memiliki bulu warna coklat
+                </div>
+            </div>
+            <div class="extra content">
+
+                <span>
+                    <i class="home icon"></i>
+                    Albar
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="assets/image/foto4.jpg" style="object-fit:cover;height:250px">
+            </div>
+            <div class="content">
+                <div class="header">Candie</div>
+                <div class="meta">
+                    <a>Hamster</a>
+                </div>
+                <div class="description">
+                    Candie sangat mengemaskan. Ia menjadi hamster yang selalu menemani hari - hari anda dengan
+                    tingkahnya yang lucunya. Candie memiliki bulu warna coklat
+                </div>
+            </div>
+            <div class="extra content">
+
+                <span>
+                    <i class="home icon"></i>
+                    Rian
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="assets/image/foto5.jpg" style="object-fit:cover;height:250px">
+            </div>
+            <div class="content">
+                <div class="header">Dexter</div>
+                <div class="meta">
+                    <a>Anjing</a>
+                </div>
+                <div class="description">
+                    Dexter sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan tingkahnya
+                    yang lucunya. Dexter memiliki bulu warna coklat
+                </div>
+            </div>
+            <div class="extra content">
+
+                <span>
+                    <i class="home icon"></i>
+                    Garda Satwa Indonesia
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="assets/image/foto6.jpg" style="object-fit:cover;height:250px">
+            </div>
+            <div class="content">
+                <div class="header">Ferguso</div>
+                <div class="meta">
+                    <a>Anjing</a>
+                </div>
+                <div class="description">
+                    Ferguso sangat mengemaskan. Ia menjadi anjing yang selalu menemani hari - hari anda dengan
+                    tingkahnya yang lucunya. Ferguso memiliki bulu warna coklat
+                </div>
+            </div>
+            <div class="extra content">
+
+                <span>
+                    <i class="home icon"></i>
+                    James
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="assets/image/foto7.jpg" style="object-fit:cover;height:250px">
+            </div>
+            <div class="content">
+                <div class="header">Nillo</div>
+                <div class="meta">
+                    <a>Kucing</a>
+                </div>
+                <div class="description">
+                    Nillo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
+                    yang lucunya. Nillo memiliki bulu warna coklat
+                </div>
+            </div>
+            <div class="extra content">
+
+                <span>
+                    <i class="home icon"></i>
+                    Pondok Pengayom Satwa
+                </span>
+            </div>
+        </div>
+        <?php foreach ($postingHewan as $u) {?>
         <div class="card" onclick="$('.ui.small.first.modal').modal('show');">
             <div class="image">
                 <img src="<?php echo $u->foto?>" style="object-fit:cover;height:250px">
@@ -78,12 +255,12 @@ if ($statuslogin == "login"){
                 </span>
             </div>
         </div>
-    <?php }?>
+        <?php }?>
     </div>
     <!-- Akhir Daftar hewan -->
 
     <!-- Data Popup Pertama-->
-    <div class="ui small first modal">
+    <div class="ui small first modal bayar">
         <i class="window close icon"></i>
         <div class="header">
             <div style="font-size:24px;font-weight:bold">Profil Hewan</div>
@@ -98,9 +275,10 @@ if ($statuslogin == "login"){
                 <!-- Jenis hewan -->
                 <div style="font-size:16px">Kucing</div>
                 <!-- Deskripsi hewannya -->
-                <p style="margin-top:10px">Yuki sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda
-                                dengan tingkahnya
-                                yang lucunya. Yuki memiliki bulu warna coklat</p>
+                <p style="margin-top:10px">Yuki sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari
+                    anda
+                    dengan tingkahnya
+                    yang lucunya. Yuki memiliki bulu warna coklat</p>
                 <!-- Informasi hewan -->
                 <div style="display:flex;flex-direction:column">
                     <div style="display:flex;flex-direction:row">
@@ -308,6 +486,102 @@ if ($statuslogin == "login"){
         </div>
     </div>
     <!-- Akhir Data Popup Ketiga -->
+
+
+    <!-- Data Popup Pertama-->
+    <div class="ui small first modal gratis">
+        <i class="window close icon"></i>
+        <div class="header">
+            <div style="font-size:24px;font-weight:bold">Profil Hewan</div>
+        </div>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="assets/image/catadopt.jpg">
+            </div>
+            <div class="description">
+                <!-- Nama hewannya -->
+                <div style="font-size:24px;font-weight:bold">Boo</div>
+                <!-- Jenis hewan -->
+                <div style="font-size:16px">Kucing</div>
+                <!-- Deskripsi hewannya -->
+                <p style="margin-top:10px">
+                    Boo sangat mengemaskan. Ia menjadi kucing yang selalu menemani hari - hari anda dengan tingkahnya
+                    yang lucunya. Boo memiliki bulu warna coklat
+                </p>
+                <!-- Informasi hewan -->
+                <div style="display:flex;flex-direction:column">
+                    <div style="display:flex;flex-direction:row">
+                        <div>Ras Hewan</div>
+                        <div style="margin-left:5px">:</div>
+                        <div style="margin-left:5px">Kucing Persia</div>
+                    </div>
+                    <div style="display:flex;flex-direction:row">
+                        <div>Jenis Kelamin</div>
+                        <div style="margin-left:5px">:</div>
+                        <div style="margin-left:5px">Jantan</div>
+                    </div>
+                    <div style="display:flex;flex-direction:row">
+                        <div>Umur</div>
+                        <div style="margin-left:5px">:</div>
+                        <div style="margin-left:5px">9 Bulan</div>
+                    </div>
+                    <div style="display:flex;flex-direction:row">
+                        <div>Warna</div>
+                        <div style="margin-left:5px">:</div>
+                        <div style="margin-left:5px">Putih</div>
+                    </div>
+                    <div style="display:flex;flex-direction:row">
+                        <div>Kondisi Kesehatan</div>
+                        <div style="margin-left:5px">:</div>
+                        <div style="margin-left:5px">Sehat</div>
+                    </div>
+                </div>
+                <!-- Yang posting -->
+                <div style="margin-top:10px">
+                    <div style="font-size:16px;font-weight:bold;margin-bottom:2px">Diposting Oleh</div>
+                    <div class="ui grid">
+                        <div class="one wide column">
+                            <a href="<?php echo base_url("penampunganhewan");?>">
+                                <i class="home icon grey"></i>
+                            </a>
+                        </div>
+                        <div class="fourteen wide column" style="font-size:14px;">
+                            <a href="<?php echo base_url("profilpenampunganhewan");?>" style="color:inherit">
+                                <div>Eka</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui brown right labeled icon button" onclick="$('.ui.tiny.second.modal.gratis').modal('show');">
+                Adopsi
+                <i class="paw icon"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Data Popup Pertama-->
+
+    <!-- Data Popup Kedua -->
+    <div class="ui tiny second modal gratis">
+        <div class="header">
+            Selesai
+        </div>
+        <div class="content">
+            <p style="font-size:16px;line-height:1.5">
+                Pengajuan anda akan diproses kepada pihak penampungan hewan setelah pembayaran terkonfirmasi. Silahkan
+                tunggu email konfirmasi dari pihak penampungan hewan untuk info lebih lanjut.
+            </p>
+        </div>
+        <div class="actions">
+            <a href="<?php echo base_url("halamanawalpengguna");?>">
+                <button class="ui positive button">
+                    Kembali Ke Beranda
+                </button>
+            </a>
+        </div>
+    </div>
 
 </div>
 
